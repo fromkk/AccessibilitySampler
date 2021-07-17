@@ -16,12 +16,15 @@ class ViewController: UIViewController, UITableViewDelegate {
     enum Item: CaseIterable, Hashable {
         case buttonNotAccessible
         case buttonAccessible
+        case tapNotAccessible
         var localizedTitle: String {
             switch self {
             case .buttonNotAccessible:
                 return L10n.Root.buttonNotAccessible
             case .buttonAccessible:
                 return L10n.Root.buttonAccessible
+            case .tapNotAccessible:
+                return L10n.Root.tapNotAccessible
             }
         }
     }
@@ -86,6 +89,8 @@ class ViewController: UIViewController, UITableViewDelegate {
             showButtonNotAccessibleView()
         case .buttonAccessible:
             showButtonAccessibleView()
+        case .tapNotAccessible:
+            showTapNotAccessibleView()
         }
     }
 
@@ -96,6 +101,11 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     private func showButtonAccessibleView() {
         let viewController = ButtonAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showTapNotAccessibleView() {
+        let viewController = TapNotAccessibleViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

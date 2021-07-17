@@ -18,6 +18,7 @@
 		AD4A923226A2DC420077A8AC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923126A2DC420077A8AC /* Strings.swift */; };
 		AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */; };
 		AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */; };
+		AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		AD4A923126A2DC420077A8AC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNotAccessibleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4A923926A2E6A10077A8AC /* Button */,
+				AD4A923E26A2ECAC0077A8AC /* Tap */,
 				AD4A923526A2DF370077A8AC /* Root */,
 			);
 			path = ViewControllers;
@@ -168,6 +171,14 @@
 				AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		AD4A923E26A2ECAC0077A8AC /* Tap */ = {
+			isa = PBXGroup;
+			children = (
+				AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */,
+			);
+			path = Tap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 			files = (
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
+				AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
 				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
 				AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */,

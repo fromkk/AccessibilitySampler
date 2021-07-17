@@ -9,3 +9,4 @@
 "like" = "スキ";
 "root.button_not_accessible" = "ボタン(not accessible)";
 "root.button_accessible" = "ボタン(accessible)";
+"root.tap_not_accessible" = "タップ(not accessible)";

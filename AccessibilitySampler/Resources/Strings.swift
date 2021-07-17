@@ -21,6 +21,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// タップ(not accessible)
+        internal static let tapNotAccessible = L10n.tr("Localizable", "root.tap_not_accessible")
     }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

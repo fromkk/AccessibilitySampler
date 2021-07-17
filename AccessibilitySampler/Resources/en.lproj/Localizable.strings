@@ -9,3 +9,4 @@
 "like" = "Like";
 "root.button_not_accessible" = "Button(not accessible)";
 "root.button_accessible" = "Button(accessible)";
+"root.tap.not_accessible" = "Tap(not accessible)";
