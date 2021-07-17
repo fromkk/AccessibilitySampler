@@ -1,5 +1,5 @@
 //
-//  TapNotAccessibleViewController.swift
+//  TapAccessibleViewController.swift
 //  AccessibilitySampler
 //
 //  Created by Kazuya Ueoka on 2021/07/17.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TapNotAccessibleViewController: UIViewController {
+final class TapAccessibleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.systemBackground
@@ -21,6 +21,7 @@ final class TapNotAccessibleViewController: UIViewController {
         view.backgroundColor = UIColor.secondarySystemBackground
         view.addGestureRecognizer(
             UITapGestureRecognizer(target: self, action: #selector(tap(sender:))))
+        view.isAccessibilityElement = true
         view.accessibilityIdentifier = #function
         view.accessibilityLabel = L10n.tapHere
         return view
