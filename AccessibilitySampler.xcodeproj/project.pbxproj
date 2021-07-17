@@ -15,6 +15,8 @@
 		AD4A920326A2D36B0077A8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4A920126A2D36B0077A8AC /* LaunchScreen.storyboard */; };
 		AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */; };
 		AD4A921926A2D36B0077A8AC /* AccessibilitySamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */; };
+		AD4A922D26A2DBBA0077A8AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4A922F26A2DBBA0077A8AC /* Localizable.strings */; };
+		AD4A923226A2DC420077A8AC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923126A2DC420077A8AC /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		AD4A921426A2D36B0077A8AC /* AccessibilitySamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilitySamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySamplerUITests.swift; sourceTree = "<group>"; };
 		AD4A921A26A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4A922E26A2DBBA0077A8AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD4A923026A2DBC80077A8AC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD4A923126A2DC420077A8AC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 		AD4A91F526A2D36A0077A8AC /* AccessibilitySampler */ = {
 			isa = PBXGroup;
 			children = (
+				AD4A922A26A2DB860077A8AC /* Resources */,
 				AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */,
 				AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */,
 				AD4A91FA26A2D36A0077A8AC /* ViewController.swift */,
@@ -128,6 +134,15 @@
 			path = AccessibilitySamplerUITests;
 			sourceTree = "<group>";
 		};
+		AD4A922A26A2DB860077A8AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD4A923126A2DC420077A8AC /* Strings.swift */,
+				AD4A922F26A2DBBA0077A8AC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD4A921D26A2D36B0077A8AC /* Build configuration list for PBXNativeTarget "AccessibilitySampler" */;
 			buildPhases = (
+				AD4A923326A2DC7A0077A8AC /* SwiftGen */,
 				AD4A922926A2DA080077A8AC /* swift-format */,
 				AD4A91EF26A2D36A0077A8AC /* Sources */,
 				AD4A91F026A2D36A0077A8AC /* Frameworks */,
@@ -214,6 +230,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = AD4A91EA26A2D36A0077A8AC;
 			productRefGroup = AD4A91F426A2D36A0077A8AC /* Products */;
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4A920326A2D36B0077A8AC /* LaunchScreen.storyboard in Resources */,
+				AD4A922D26A2DBBA0077A8AC /* Localizable.strings in Resources */,
 				AD4A920026A2D36B0077A8AC /* Assets.xcassets in Resources */,
 				AD4A91FE26A2D36A0077A8AC /* Main.storyboard in Resources */,
 			);
@@ -273,6 +291,24 @@
 			shellPath = /bin/sh;
 			shellScript = "xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\n";
 		};
+		AD4A923326A2DC7A0077A8AC /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun --sdk macosx mint run SwiftGen\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,6 +318,7 @@
 			files = (
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
+				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
 				AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +371,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		AD4A922F26A2DBBA0077A8AC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4A922E26A2DBBA0077A8AC /* en */,
+				AD4A923026A2DBC80077A8AC /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -341,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -402,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

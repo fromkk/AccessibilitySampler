@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = L10n.title
         // Do any additional setup after loading the view.
     }
 

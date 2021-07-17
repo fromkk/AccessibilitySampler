@@ -1,0 +1,5 @@
+strings:
+  inputs: AccessibilitySampler/Resources/ja.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: AccessibilitySampler/Resources/Strings.swift
