@@ -31,6 +31,13 @@ class ViewController: UIViewController, UITableViewDelegate {
         applyDataSource()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -70,6 +77,15 @@ class ViewController: UIViewController, UITableViewDelegate {
     // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(#function) indexPath \(indexPath)")
+        let item = Item.allCases[indexPath.row]
+        switch item {
+        case .button:
+            showButtonView()
+        }
+    }
+
+    private func showButtonView() {
+        let viewController = ButtonViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
