@@ -102,10 +102,10 @@
 		AD4A91F526A2D36A0077A8AC /* AccessibilitySampler */ = {
 			isa = PBXGroup;
 			children = (
+				AD4A923426A2DF2D0077A8AC /* ViewControllers */,
 				AD4A922A26A2DB860077A8AC /* Resources */,
 				AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */,
 				AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */,
-				AD4A91FA26A2D36A0077A8AC /* ViewController.swift */,
 				AD4A91FF26A2D36B0077A8AC /* Assets.xcassets */,
 				AD4A920126A2D36B0077A8AC /* LaunchScreen.storyboard */,
 				AD4A920426A2D36B0077A8AC /* Info.plist */,
@@ -138,6 +138,22 @@
 				AD4A922F26A2DBBA0077A8AC /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD4A923426A2DF2D0077A8AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD4A923526A2DF370077A8AC /* Root */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD4A923526A2DF370077A8AC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AD4A91FA26A2D36A0077A8AC /* ViewController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
