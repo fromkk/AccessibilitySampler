@@ -135,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD4A921D26A2D36B0077A8AC /* Build configuration list for PBXNativeTarget "AccessibilitySampler" */;
 			buildPhases = (
+				AD4A922926A2DA080077A8AC /* swift-format */,
 				AD4A91EF26A2D36A0077A8AC /* Sources */,
 				AD4A91F026A2D36A0077A8AC /* Frameworks */,
 				AD4A91F126A2D36A0077A8AC /* Resources */,
@@ -252,6 +253,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD4A922926A2DA080077A8AC /* swift-format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "swift-format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD4A91EF26A2D36A0077A8AC /* Sources */ = {
