@@ -10,12 +10,17 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+    /// スキ
+    internal static let like = L10n.tr("Localizable", "like")
     /// Accessibility Sampler
     internal static let title = L10n.tr("Localizable", "title")
 
     internal enum Root {
-        /// ボタン
-        internal static let button = L10n.tr("Localizable", "root.button")
+        /// ボタン(accessible)
+        internal static let buttonAccessible = L10n.tr("Localizable", "root.button_accessible")
+        /// ボタン(not accessible)
+        internal static let buttonNotAccessible = L10n.tr(
+            "Localizable", "root.button_not_accessible")
     }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

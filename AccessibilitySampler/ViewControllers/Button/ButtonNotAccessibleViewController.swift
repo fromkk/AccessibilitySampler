@@ -1,5 +1,5 @@
 //
-//  ButtonViewController.swift
+//  ButtonNotAccessibleViewController.swift
 //  AccessibilitySampler
 //
 //  Created by Kazuya Ueoka on 2021/07/17.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class ButtonViewController: UIViewController {
+final class ButtonNotAccessibleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = L10n.Root.button
+        title = L10n.Root.buttonNotAccessible
         view.backgroundColor = UIColor.systemBackground
         addButton()
     }

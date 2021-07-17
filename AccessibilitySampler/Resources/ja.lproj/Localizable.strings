@@ -6,4 +6,6 @@
   
 */
 "title" = "Accessibility Sampler";
-"root.button" = "ボタン";
+"like" = "スキ";
+"root.button_not_accessible" = "ボタン(not accessible)";
+"root.button_accessible" = "ボタン(accessible)";

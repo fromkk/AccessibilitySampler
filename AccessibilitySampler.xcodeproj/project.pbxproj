@@ -16,7 +16,8 @@
 		AD4A921926A2D36B0077A8AC /* AccessibilitySamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */; };
 		AD4A922D26A2DBBA0077A8AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4A922F26A2DBBA0077A8AC /* Localizable.strings */; };
 		AD4A923226A2DC420077A8AC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923126A2DC420077A8AC /* Strings.swift */; };
-		AD4A923B26A2E6AE0077A8AC /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923A26A2E6AE0077A8AC /* ButtonViewController.swift */; };
+		AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */; };
+		AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		AD4A922E26A2DBBA0077A8AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4A923026A2DBC80077A8AC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4A923126A2DC420077A8AC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		AD4A923A26A2E6AE0077A8AC /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNotAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAccessibleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +164,8 @@
 		AD4A923926A2E6A10077A8AC /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				AD4A923A26A2E6AE0077A8AC /* ButtonViewController.swift */,
+				AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */,
+				AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -339,10 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
 				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
-				AD4A923B26A2E6AE0077A8AC /* ButtonViewController.swift in Sources */,
+				AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */,
 				AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,11 +14,14 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
 
     enum Item: CaseIterable, Hashable {
-        case button
+        case buttonNotAccessible
+        case buttonAccessible
         var localizedTitle: String {
             switch self {
-            case .button:
-                return L10n.Root.button
+            case .buttonNotAccessible:
+                return L10n.Root.buttonNotAccessible
+            case .buttonAccessible:
+                return L10n.Root.buttonAccessible
             }
         }
     }
@@ -79,13 +82,20 @@ class ViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = Item.allCases[indexPath.row]
         switch item {
-        case .button:
-            showButtonView()
+        case .buttonNotAccessible:
+            showButtonNotAccessibleView()
+        case .buttonAccessible:
+            showButtonAccessibleView()
         }
     }
 
-    private func showButtonView() {
-        let viewController = ButtonViewController()
+    private func showButtonNotAccessibleView() {
+        let viewController = ButtonNotAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showButtonAccessibleView() {
+        let viewController = ButtonAccessibleViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
