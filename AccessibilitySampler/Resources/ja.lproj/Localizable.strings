@@ -6,6 +6,7 @@
   
 */
 "title" = "Accessibility Sampler";
+"close" = "閉じる";
 "like" = "スキ";
 "tap_here" = "ここをタップ";
 "modal" = "モーダルだよ";
@@ -14,3 +15,4 @@
 "root.tap_not_accessible" = "タップ(not accessible)";
 "root.tap_accessible" = "タップ(accessible)";
 "root.modal_not_accessible" = "モーダル(not accessible)";
+"root.modal_accessible" = "モーダル(accessible)";

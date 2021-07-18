@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         case tapNotAccessible
         case tapAccessible
         case modalNotAccessible
+        case modalAccessible
 
         var localizedTitle: String {
             switch self {
@@ -33,6 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.tapAccessible
             case .modalNotAccessible:
                 return L10n.Root.modalNotAccessible
+            case .modalAccessible:
+                return L10n.Root.modalAccessible
             }
         }
     }
@@ -43,13 +46,6 @@ class ViewController: UIViewController, UITableViewDelegate {
         view.backgroundColor = UIColor.systemBackground
         addTableView()
         applyDataSource()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if let indexPath = tableView.indexPathForSelectedRow {
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
     }
 
     lazy var tableView: UITableView = {
@@ -91,6 +87,10 @@ class ViewController: UIViewController, UITableViewDelegate {
     // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        defer {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+
         let item = Item.allCases[indexPath.row]
         switch item {
         case .buttonNotAccessible:
@@ -103,6 +103,8 @@ class ViewController: UIViewController, UITableViewDelegate {
             showTapAccessibleView()
         case .modalNotAccessible:
             showModalNotAccessible()
+        case .modalAccessible:
+            showModalAccessible()
         }
     }
 
@@ -128,6 +130,15 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     private func showModalNotAccessible() {
         let viewController = ModalNotAccessibleViewController()
+        let fpc = FloatingPanelController()
+        fpc.set(contentViewController: viewController)
+        fpc.isRemovalInteractionEnabled = true
+        fpc.layout = CustomLayout()
+        present(fpc, animated: true)
+    }
+
+    private func showModalAccessible() {
+        let viewController = ModalAccessibleViewController()
         let fpc = FloatingPanelController()
         fpc.set(contentViewController: viewController)
         fpc.isRemovalInteractionEnabled = true

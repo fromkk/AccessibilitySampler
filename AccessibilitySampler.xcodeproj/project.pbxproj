@@ -10,6 +10,7 @@
 		AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */; };
 		AD2BC17626A3D2EF0016F37F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BC17526A3D2EF0016F37F /* FloatingPanel */; };
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
+		AD2BC18126A3D8D30016F37F /* ModalAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */; };
 		AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */; };
 		AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */; };
 		AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91FA26A2D36A0077A8AC /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A91F326A2D36A0077A8AC /* AccessibilitySampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilitySampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */,
+				AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */,
 				AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */,
 				AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */,
+				AD2BC18126A3D8D30016F37F /* ModalAccessibleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

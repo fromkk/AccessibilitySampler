@@ -10,6 +10,8 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+    /// 閉じる
+    internal static let close = L10n.tr("Localizable", "close")
     /// スキ
     internal static let like = L10n.tr("Localizable", "like")
     /// モーダルだよ
@@ -25,6 +27,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// モーダル(accessible)
+        internal static let modalAccessible = L10n.tr("Localizable", "root.modal_accessible")
         /// モーダル(not accessible)
         internal static let modalNotAccessible = L10n.tr("Localizable", "root.modal_not_accessible")
         /// タップ(accessible)
