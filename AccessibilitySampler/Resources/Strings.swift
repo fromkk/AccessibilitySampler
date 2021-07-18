@@ -12,6 +12,10 @@ import Foundation
 internal enum L10n {
     /// 閉じる
     internal static let close = L10n.tr("Localizable", "close")
+    /// 現在の時刻: %@
+    internal static func currentDate(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "current_date", String(describing: p1))
+    }
     /// フォーカス当たりますか？
     internal static let focusHere = L10n.tr("Localizable", "focus_here")
     /// スキ
@@ -35,6 +39,10 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// 日付(accessible)
+        internal static let dateAccessible = L10n.tr("Localizable", "root.date_accessible")
+        /// 日付(not accessible)
+        internal static let dateNotAccessible = L10n.tr("Localizable", "root.date_not_accessible")
         /// フォーカス(accessible)
         internal static let focusAccessible = L10n.tr("Localizable", "root.focus_accessible")
         /// フォーカス(not accessible)

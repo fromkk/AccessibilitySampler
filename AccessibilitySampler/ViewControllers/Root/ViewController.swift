@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         case modalAccessible
         case focusNotAccessible
         case focusAccessible
+        case dateNotAccessible
+        case dateAccessible
 
         var localizedTitle: String {
             switch self {
@@ -42,6 +44,10 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.focusNotAccessible
             case .focusAccessible:
                 return L10n.Root.focusAccessible
+            case .dateNotAccessible:
+                return L10n.Root.dateNotAccessible
+            case .dateAccessible:
+                return L10n.Root.dateAccessible
             }
         }
     }
@@ -115,6 +121,10 @@ class ViewController: UIViewController, UITableViewDelegate {
             showFocusNotAccessibleView()
         case .focusAccessible:
             showFocusAccessibleView()
+        case .dateNotAccessible:
+            showDateNotAccessibleView()
+        case .dateAccessible:
+            showDateAccessibleView()
         }
     }
 
@@ -164,5 +174,15 @@ class ViewController: UIViewController, UITableViewDelegate {
     private func showFocusAccessibleView() {
         let viewControlelr = FocusAccessibleViewController()
         navigationController?.pushViewController(viewControlelr, animated: true)
+    }
+
+    private func showDateNotAccessibleView() {
+        let viewController = DateNotAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showDateAccessibleView() {
+        let viewController = DateAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

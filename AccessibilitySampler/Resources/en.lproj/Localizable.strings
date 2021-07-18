@@ -14,6 +14,7 @@
 "next" = "Next";
 "focus_here" = "Focus here.";
 "tapped" = "Tapped!";
+"current_date" = "Current date: %@";
 "root.button_not_accessible" = "Button(not accessible)";
 "root.button_accessible" = "Button(accessible)";
 "root.tap_not_accessible" = "Tap(not accessible)";
@@ -22,3 +23,5 @@
 "root.modal_accessible" = "Modal(accessible)";
 "root.focus_not_accessible" = "Focus(not accessible)";
 "root.focus_accessible" = "Focus(accessible)";
+"root.date_not_accessible" = "Date(not accessible)";
+"root.date_accessible" = "Date(accessible)";

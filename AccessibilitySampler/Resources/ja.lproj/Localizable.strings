@@ -14,6 +14,7 @@
 "next" = "次へ";
 "focus_here" = "フォーカス当たりますか？";
 "tapped" = "タップされました";
+"current_date" = "現在の時刻: %@";
 "root.button_not_accessible" = "ボタン(not accessible)";
 "root.button_accessible" = "ボタン(accessible)";
 "root.tap_not_accessible" = "タップ(not accessible)";
@@ -22,3 +23,5 @@
 "root.modal_accessible" = "モーダル(accessible)";
 "root.focus_not_accessible" = "フォーカス(not accessible)";
 "root.focus_accessible" = "フォーカス(accessible)";
+"root.date_not_accessible" = "日付(not accessible)";
+"root.date_accessible" = "日付(accessible)";
