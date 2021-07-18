@@ -21,6 +21,8 @@ final class ModalNotAccessibleViewController: UIViewController {
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.text = L10n.modal
         label.textAlignment = .center
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         label.accessibilityIdentifier = #function
         return label
     }()

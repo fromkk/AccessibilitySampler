@@ -47,6 +47,8 @@ final class FocusAccessibleViewController: UIViewController {
         label.textColor = UIColor.label
         label.font = UIFont.preferredFont(forTextStyle: .subheadline)
         label.text = L10n.focusHere
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
