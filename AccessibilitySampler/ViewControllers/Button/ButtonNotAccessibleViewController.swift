@@ -39,6 +39,6 @@ final class ButtonNotAccessibleViewController: UIViewController {
     }
 
     @objc private func tap(sender: Any) {
-        print("\(#function)")
+        showTappedAlert()
     }
 }

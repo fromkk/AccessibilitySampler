@@ -40,6 +40,6 @@ final class ButtonAccessibleViewController: UIViewController {
     }
 
     @objc private func tap(sender: Any) {
-        print("\(#function)")
+        showTappedAlert()
     }
 }

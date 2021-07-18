@@ -6,12 +6,14 @@
   
 */
 "title" = "Accessibility Sampler";
+"ok" = "OK";
 "close" = "閉じる";
 "like" = "スキ";
 "tap_here" = "ここをタップ";
 "modal" = "モーダルだよ";
 "next" = "次へ";
 "focus_here" = "フォーカス当たりますか？";
+"tapped" = "タップされました";
 "root.button_not_accessible" = "ボタン(not accessible)";
 "root.button_accessible" = "ボタン(accessible)";
 "root.tap_not_accessible" = "タップ(not accessible)";

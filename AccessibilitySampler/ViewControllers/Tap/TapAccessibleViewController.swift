@@ -39,7 +39,7 @@ final class TapAccessibleViewController: UIViewController {
     }
 
     @objc private func tap(sender: UITapGestureRecognizer) {
-        print("\(#function)")
+        showTappedAlert()
     }
 
     lazy var handImageView: UIImageView = {

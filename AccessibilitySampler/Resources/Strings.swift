@@ -20,8 +20,12 @@ internal enum L10n {
     internal static let modal = L10n.tr("Localizable", "modal")
     /// 次へ
     internal static let next = L10n.tr("Localizable", "next")
+    /// OK
+    internal static let ok = L10n.tr("Localizable", "ok")
     /// ここをタップ
     internal static let tapHere = L10n.tr("Localizable", "tap_here")
+    /// タップされました
+    internal static let tapped = L10n.tr("Localizable", "tapped")
     /// Accessibility Sampler
     internal static let title = L10n.tr("Localizable", "title")
 

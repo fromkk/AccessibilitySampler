@@ -13,6 +13,7 @@
 		AD2BC18126A3D8D30016F37F /* ModalAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */; };
 		AD2BC18426A3E10D0016F37F /* FocusNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18326A3E10D0016F37F /* FocusNotAccessibleViewController.swift */; };
 		AD2BC18626A3E4EF0016F37F /* FocusAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18526A3E4EF0016F37F /* FocusAccessibleViewController.swift */; };
+		AD2BC18926A3E60C0016F37F /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18826A3E60C0016F37F /* UIViewController+.swift */; };
 		AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */; };
 		AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */; };
 		AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91FA26A2D36A0077A8AC /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC18326A3E10D0016F37F /* FocusNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC18526A3E4EF0016F37F /* FocusAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD2BC18826A3E60C0016F37F /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		AD4A91F326A2D36A0077A8AC /* AccessibilitySampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilitySampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Focus;
 			sourceTree = "<group>";
 		};
+		AD2BC18726A3E5CC0016F37F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BC18826A3E60C0016F37F /* UIViewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AD4A91EA26A2D36A0077A8AC = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 		AD4A91F526A2D36A0077A8AC /* AccessibilitySampler */ = {
 			isa = PBXGroup;
 			children = (
+				AD2BC18726A3E5CC0016F37F /* Extension */,
 				AD2BC17D26A3D7810016F37F /* FloatingPanel */,
 				AD4A923426A2DF2D0077A8AC /* ViewControllers */,
 				AD4A922A26A2DB860077A8AC /* Resources */,
@@ -403,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2BC18926A3E60C0016F37F /* UIViewController+.swift in Sources */,
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
