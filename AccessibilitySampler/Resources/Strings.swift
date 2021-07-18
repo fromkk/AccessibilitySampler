@@ -26,7 +26,7 @@ internal enum L10n {
     internal static let tapHere = L10n.tr("Localizable", "tap_here")
     /// タップされました
     internal static let tapped = L10n.tr("Localizable", "tapped")
-    /// Accessibility Sampler
+    /// アクセシビリティサンプラー
     internal static let title = L10n.tr("Localizable", "title")
 
     internal enum Root {
