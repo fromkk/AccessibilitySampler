@@ -10,9 +10,12 @@
 "like" = "スキ";
 "tap_here" = "ここをタップ";
 "modal" = "モーダルだよ";
+"next" = "次へ";
+"focus_here" = "フォーカス当たりますか？";
 "root.button_not_accessible" = "ボタン(not accessible)";
 "root.button_accessible" = "ボタン(accessible)";
 "root.tap_not_accessible" = "タップ(not accessible)";
 "root.tap_accessible" = "タップ(accessible)";
 "root.modal_not_accessible" = "モーダル(not accessible)";
 "root.modal_accessible" = "モーダル(accessible)";
+"root.focus_not_accessible" = "フォーカス(not accessible)";

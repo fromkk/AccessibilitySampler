@@ -12,10 +12,14 @@ import Foundation
 internal enum L10n {
     /// 閉じる
     internal static let close = L10n.tr("Localizable", "close")
+    /// フォーカス当たりますか？
+    internal static let focusHere = L10n.tr("Localizable", "focus_here")
     /// スキ
     internal static let like = L10n.tr("Localizable", "like")
     /// モーダルだよ
     internal static let modal = L10n.tr("Localizable", "modal")
+    /// 次へ
+    internal static let next = L10n.tr("Localizable", "next")
     /// ここをタップ
     internal static let tapHere = L10n.tr("Localizable", "tap_here")
     /// Accessibility Sampler
@@ -27,6 +31,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// フォーカス(not accessible)
+        internal static let focusNotAccessible = L10n.tr("Localizable", "root.focus_not_accessible")
         /// モーダル(accessible)
         internal static let modalAccessible = L10n.tr("Localizable", "root.modal_accessible")
         /// モーダル(not accessible)

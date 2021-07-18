@@ -10,9 +10,12 @@
 "like" = "Like";
 "tap_here" = "Tap here";
 "modal" = "This is modal.";
+"next" = "Next";
+"focus_here" = "Focus here.";
 "root.button_not_accessible" = "Button(not accessible)";
 "root.button_accessible" = "Button(accessible)";
 "root.tap_not_accessible" = "Tap(not accessible)";
 "root.tap_accessible" = "Tap(accessible)";
 "root.modal_not_accessible" = "Modal(not accessible)";
 "root.modal_accessible" = "Modal(accessible)";
+"root.focus_not_accessible" = "Focus(not accessible)";

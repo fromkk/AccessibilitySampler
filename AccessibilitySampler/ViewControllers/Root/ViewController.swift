@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         case tapAccessible
         case modalNotAccessible
         case modalAccessible
+        case focusNotAccessible
 
         var localizedTitle: String {
             switch self {
@@ -36,6 +37,8 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.modalNotAccessible
             case .modalAccessible:
                 return L10n.Root.modalAccessible
+            case .focusNotAccessible:
+                return L10n.Root.focusNotAccessible
             }
         }
     }
@@ -105,6 +108,8 @@ class ViewController: UIViewController, UITableViewDelegate {
             showModalNotAccessible()
         case .modalAccessible:
             showModalAccessible()
+        case .focusNotAccessible:
+            showFocusNotAccessibleView()
         }
     }
 
@@ -144,5 +149,10 @@ class ViewController: UIViewController, UITableViewDelegate {
         fpc.isRemovalInteractionEnabled = true
         fpc.layout = CustomLayout()
         present(fpc, animated: true)
+    }
+
+    private func showFocusNotAccessibleView() {
+        let viewControlelr = FocusNotAccessibleViewController()
+        navigationController?.pushViewController(viewControlelr, animated: true)
     }
 }
