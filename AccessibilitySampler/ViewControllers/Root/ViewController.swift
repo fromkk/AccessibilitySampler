@@ -15,10 +15,10 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
 
     enum Item: CaseIterable, Hashable {
-        case buttonNotAccessible
-        case buttonAccessible
         case tapNotAccessible
         case tapAccessible
+        case buttonNotAccessible
+        case buttonAccessible
         case modalNotAccessible
         case modalAccessible
         case focusNotAccessible
