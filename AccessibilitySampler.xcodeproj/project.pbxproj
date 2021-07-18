@@ -12,6 +12,7 @@
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
 		AD2BC18126A3D8D30016F37F /* ModalAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */; };
 		AD2BC18426A3E10D0016F37F /* FocusNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18326A3E10D0016F37F /* FocusNotAccessibleViewController.swift */; };
+		AD2BC18626A3E4EF0016F37F /* FocusAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC18526A3E4EF0016F37F /* FocusAccessibleViewController.swift */; };
 		AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */; };
 		AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */; };
 		AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91FA26A2D36A0077A8AC /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC18326A3E10D0016F37F /* FocusNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusNotAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD2BC18526A3E4EF0016F37F /* FocusAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A91F326A2D36A0077A8AC /* AccessibilitySampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilitySampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A91F626A2D36A0077A8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4A91F826A2D36A0077A8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2BC18326A3E10D0016F37F /* FocusNotAccessibleViewController.swift */,
+				AD2BC18526A3E4EF0016F37F /* FocusAccessibleViewController.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */,
 				AD4A91F926A2D36A0077A8AC /* SceneDelegate.swift in Sources */,
 				AD2BC18126A3D8D30016F37F /* ModalAccessibleViewController.swift in Sources */,
+				AD2BC18626A3E4EF0016F37F /* FocusAccessibleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

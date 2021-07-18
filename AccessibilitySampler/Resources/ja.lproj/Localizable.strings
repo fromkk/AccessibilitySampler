@@ -19,3 +19,4 @@
 "root.modal_not_accessible" = "モーダル(not accessible)";
 "root.modal_accessible" = "モーダル(accessible)";
 "root.focus_not_accessible" = "フォーカス(not accessible)";
+"root.focus_accessible" = "フォーカス(accessible)";

@@ -31,6 +31,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// フォーカス(accessible)
+        internal static let focusAccessible = L10n.tr("Localizable", "root.focus_accessible")
         /// フォーカス(not accessible)
         internal static let focusNotAccessible = L10n.tr("Localizable", "root.focus_not_accessible")
         /// モーダル(accessible)

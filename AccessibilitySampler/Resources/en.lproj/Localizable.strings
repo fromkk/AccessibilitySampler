@@ -19,3 +19,4 @@
 "root.modal_not_accessible" = "Modal(not accessible)";
 "root.modal_accessible" = "Modal(accessible)";
 "root.focus_not_accessible" = "Focus(not accessible)";
+"root.focus_accessible" = "Focus(accessible)";

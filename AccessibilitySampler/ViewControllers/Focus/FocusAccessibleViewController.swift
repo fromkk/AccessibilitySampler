@@ -1,5 +1,5 @@
 //
-//  FocusNotAccessibleViewController.swift
+//  FocusAccessibleViewController.swift
 //  AccessibilitySampler
 //
 //  Created by Kazuya Ueoka on 2021/07/18.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class FocusNotAccessibleViewController: UIViewController {
+final class FocusAccessibleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = L10n.Root.focusNotAccessible
+        title = L10n.Root.focusAccessible
         view.backgroundColor = UIColor.systemBackground
         addNextButton()
         addMessageLabel()
@@ -39,7 +39,7 @@ final class FocusNotAccessibleViewController: UIViewController {
     }
 
     @objc private func next(sender: Any) {
-        // NOP
+        UIAccessibility.post(notification: .layoutChanged, argument: messageLabel)
     }
 
     lazy var messageLabel: UILabel = {
