@@ -5,6 +5,7 @@
 //  Created by Kazuya Ueoka on 2021/07/17.
 //
 
+import FloatingPanel
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
@@ -18,6 +19,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         case buttonAccessible
         case tapNotAccessible
         case tapAccessible
+        case modalNotAccessible
+
         var localizedTitle: String {
             switch self {
             case .buttonNotAccessible:
@@ -28,6 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.tapNotAccessible
             case .tapAccessible:
                 return L10n.Root.tapAccessible
+            case .modalNotAccessible:
+                return L10n.Root.modalNotAccessible
             }
         }
     }
@@ -96,6 +101,8 @@ class ViewController: UIViewController, UITableViewDelegate {
             showTapNotAccessibleView()
         case .tapAccessible:
             showTapAccessibleView()
+        case .modalNotAccessible:
+            showModalNotAccessible()
         }
     }
 
@@ -117,5 +124,14 @@ class ViewController: UIViewController, UITableViewDelegate {
     private func showTapAccessibleView() {
         let viewController = TapAccessibleViewController()
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showModalNotAccessible() {
+        let viewController = ModalNotAccessibleViewController()
+        let fpc = FloatingPanelController()
+        fpc.set(contentViewController: viewController)
+        fpc.isRemovalInteractionEnabled = true
+        fpc.layout = CustomLayout()
+        present(fpc, animated: true)
     }
 }

@@ -12,6 +12,8 @@ import Foundation
 internal enum L10n {
     /// スキ
     internal static let like = L10n.tr("Localizable", "like")
+    /// モーダルだよ
+    internal static let modal = L10n.tr("Localizable", "modal")
     /// ここをタップ
     internal static let tapHere = L10n.tr("Localizable", "tap_here")
     /// Accessibility Sampler
@@ -23,6 +25,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// モーダル(not accessible)
+        internal static let modalNotAccessible = L10n.tr("Localizable", "root.modal_not_accessible")
         /// タップ(accessible)
         internal static let tapAccessible = L10n.tr("Localizable", "root.tap_accessible")
         /// タップ(not accessible)

@@ -8,6 +8,7 @@
 "title" = "Accessibility Sampler";
 "like" = "Like";
 "tap_here" = "Tap here";
+"modal" = "This is modal.";
 "root.button_not_accessible" = "Button(not accessible)";
 "root.button_accessible" = "Button(accessible)";
 "root.tap.not_accessible" = "Tap(not accessible)";
