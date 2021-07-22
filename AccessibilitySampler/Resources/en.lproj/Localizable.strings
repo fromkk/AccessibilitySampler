@@ -26,3 +26,4 @@
 "root.date_not_accessible" = "Date(not accessible)";
 "root.date_accessible" = "Date(accessible)";
 "root.switch_not_accessible" = "Switch(not accessible)";
+"root.switch_accessible" = "Switch(accessible)";

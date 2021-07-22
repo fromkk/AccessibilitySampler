@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AD078DB826A9109500A388C5 /* SwitchNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DB726A9109500A388C5 /* SwitchNotAccessibleViewController.swift */; };
 		AD078DBB26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBA26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift */; };
+		AD078DBD26A9153300A388C5 /* SwitchAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBC26A9153300A388C5 /* SwitchAccessibleViewController.swift */; };
+		AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */; };
 		AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */; };
 		AD2BC17626A3D2EF0016F37F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BC17526A3D2EF0016F37F /* FloatingPanel */; };
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		AD078DB726A9109500A388C5 /* SwitchNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD078DBA26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchNotAccessibleViewCell.swift; sourceTree = "<group>"; };
+		AD078DBC26A9153300A388C5 /* SwitchAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccessibleViewCell.swift; sourceTree = "<group>"; };
 		AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			children = (
 				AD078DB926A9118F00A388C5 /* Views */,
 				AD078DB726A9109500A388C5 /* SwitchNotAccessibleViewController.swift */,
+				AD078DBC26A9153300A388C5 /* SwitchAccessibleViewController.swift */,
 			);
 			path = Switch;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				AD078DBA26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift */,
+				AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -455,6 +461,8 @@
 			files = (
 				AD2BC19026A3F2E70016F37F /* DateAccessibleViewController.swift in Sources */,
 				AD2BC18926A3E60C0016F37F /* UIViewController+.swift in Sources */,
+				AD078DBD26A9153300A388C5 /* SwitchAccessibleViewController.swift in Sources */,
+				AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */,
 				AD2BC18E26A3F2B60016F37F /* NowRepresentable.swift in Sources */,
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
