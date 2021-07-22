@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         case focusAccessible
         case dateNotAccessible
         case dateAccessible
+        case switchNotAccessible
 
         var localizedTitle: String {
             switch self {
@@ -48,6 +49,8 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.dateNotAccessible
             case .dateAccessible:
                 return L10n.Root.dateAccessible
+            case .switchNotAccessible:
+                return L10n.Root.switchNotAccessible
             }
         }
     }
@@ -125,6 +128,8 @@ class ViewController: UIViewController, UITableViewDelegate {
             showDateNotAccessibleView()
         case .dateAccessible:
             showDateAccessibleView()
+        case .switchNotAccessible:
+            showSwitchNotAccessibleView()
         }
     }
 
@@ -183,6 +188,11 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     private func showDateAccessibleView() {
         let viewController = DateAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showSwitchNotAccessibleView() {
+        let viewController = SwitchNotAccessibleViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

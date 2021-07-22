@@ -51,6 +51,9 @@ internal enum L10n {
         internal static let modalAccessible = L10n.tr("Localizable", "root.modal_accessible")
         /// モーダル(not accessible)
         internal static let modalNotAccessible = L10n.tr("Localizable", "root.modal_not_accessible")
+        /// スイッチ(not accessible)
+        internal static let switchNotAccessible = L10n.tr(
+            "Localizable", "root.switch_not_accessible")
         /// タップ(accessible)
         internal static let tapAccessible = L10n.tr("Localizable", "root.tap_accessible")
         /// タップ(not accessible)
