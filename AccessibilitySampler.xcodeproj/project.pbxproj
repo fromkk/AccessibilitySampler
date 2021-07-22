@@ -36,6 +36,7 @@
 		AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */; };
 		AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */; };
 		AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */; };
+		ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8D93026A9937D00C2115D /* RootItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAccessibleViewController.swift; sourceTree = "<group>"; };
+		ADB8D93026A9937D00C2115D /* RootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4A91FA26A2D36A0077A8AC /* ViewController.swift */,
+				ADB8D93026A9937D00C2115D /* RootItem.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
 				AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
+				ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */,
 				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
 				AD078DBB26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift in Sources */,
 				AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */,

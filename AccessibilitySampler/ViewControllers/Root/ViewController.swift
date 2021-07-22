@@ -5,65 +5,9 @@
 //  Created by Kazuya Ueoka on 2021/07/17.
 //
 
-import FloatingPanel
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
-
-    enum Section: CaseIterable, Hashable {
-        case items
-    }
-
-    enum Item: CaseIterable, Hashable {
-        case tapNotAccessible
-        case tapAccessible
-        case buttonNotAccessible
-        case buttonAccessible
-        case modalNotAccessible
-        case modalAccessible
-        case focusNotAccessible
-        case focusAccessible
-        case dateNotAccessible
-        case dateAccessible
-        case switchNotAccessible
-        case switchAccessible
-        case headlineNotAccessible
-        case headlineAccessible
-
-        var localizedTitle: String {
-            switch self {
-            case .buttonNotAccessible:
-                return L10n.Root.buttonNotAccessible
-            case .buttonAccessible:
-                return L10n.Root.buttonAccessible
-            case .tapNotAccessible:
-                return L10n.Root.tapNotAccessible
-            case .tapAccessible:
-                return L10n.Root.tapAccessible
-            case .modalNotAccessible:
-                return L10n.Root.modalNotAccessible
-            case .modalAccessible:
-                return L10n.Root.modalAccessible
-            case .focusNotAccessible:
-                return L10n.Root.focusNotAccessible
-            case .focusAccessible:
-                return L10n.Root.focusAccessible
-            case .dateNotAccessible:
-                return L10n.Root.dateNotAccessible
-            case .dateAccessible:
-                return L10n.Root.dateAccessible
-            case .switchNotAccessible:
-                return L10n.Root.switchNotAccessible
-            case .switchAccessible:
-                return L10n.Root.switchAccessible
-            case .headlineNotAccessible:
-                return L10n.Root.headlineNotAccessible
-            case .headlineAccessible:
-                return L10n.Root.headlineAccessible
-            }
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = L10n.title
@@ -91,8 +35,9 @@ class ViewController: UIViewController, UITableViewDelegate {
         ])
     }
 
-    private lazy var dataSource: UITableViewDiffableDataSource<Section, Item> = {
-        let dataSource = UITableViewDiffableDataSource<Section, Item>(tableView: tableView) {
+    private lazy var dataSource: UITableViewDiffableDataSource<RootSection, RootItem> = {
+        let dataSource = UITableViewDiffableDataSource<RootSection, RootItem>(tableView: tableView)
+        {
             tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.textLabel?.text = item.localizedTitle
@@ -102,9 +47,9 @@ class ViewController: UIViewController, UITableViewDelegate {
     }()
 
     private func applyDataSource() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        var snapshot = NSDiffableDataSourceSnapshot<RootSection, RootItem>()
         snapshot.appendSections([.items])
-        snapshot.appendItems(Item.allCases, toSection: .items)
+        snapshot.appendItems(RootItem.allCases, toSection: .items)
         dataSource.apply(snapshot)
     }
 
@@ -115,114 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             tableView.deselectRow(at: indexPath, animated: true)
         }
 
-        let item = Item.allCases[indexPath.row]
-        switch item {
-        case .buttonNotAccessible:
-            showButtonNotAccessibleView()
-        case .buttonAccessible:
-            showButtonAccessibleView()
-        case .tapNotAccessible:
-            showTapNotAccessibleView()
-        case .tapAccessible:
-            showTapAccessibleView()
-        case .modalNotAccessible:
-            showModalNotAccessible()
-        case .modalAccessible:
-            showModalAccessible()
-        case .focusNotAccessible:
-            showFocusNotAccessibleView()
-        case .focusAccessible:
-            showFocusAccessibleView()
-        case .dateNotAccessible:
-            showDateNotAccessibleView()
-        case .dateAccessible:
-            showDateAccessibleView()
-        case .switchNotAccessible:
-            showSwitchNotAccessibleView()
-        case .switchAccessible:
-            showSwitchAccessibleView()
-        case .headlineNotAccessible:
-            showHeadlineNotAccessibleView()
-        case .headlineAccessible:
-            showHeadlineAccessibleView()
-        }
-    }
-
-    private func showButtonNotAccessibleView() {
-        let viewController = ButtonNotAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showButtonAccessibleView() {
-        let viewController = ButtonAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showTapNotAccessibleView() {
-        let viewController = TapNotAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showTapAccessibleView() {
-        let viewController = TapAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showModalNotAccessible() {
-        let viewController = ModalNotAccessibleViewController()
-        let fpc = FloatingPanelController()
-        fpc.set(contentViewController: viewController)
-        fpc.isRemovalInteractionEnabled = true
-        fpc.layout = CustomLayout()
-        present(fpc, animated: true)
-    }
-
-    private func showModalAccessible() {
-        let viewController = ModalAccessibleViewController()
-        let fpc = FloatingPanelController()
-        fpc.set(contentViewController: viewController)
-        fpc.isRemovalInteractionEnabled = true
-        fpc.layout = CustomLayout()
-        present(fpc, animated: true)
-    }
-
-    private func showFocusNotAccessibleView() {
-        let viewControlelr = FocusNotAccessibleViewController()
-        navigationController?.pushViewController(viewControlelr, animated: true)
-    }
-
-    private func showFocusAccessibleView() {
-        let viewControlelr = FocusAccessibleViewController()
-        navigationController?.pushViewController(viewControlelr, animated: true)
-    }
-
-    private func showDateNotAccessibleView() {
-        let viewController = DateNotAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showDateAccessibleView() {
-        let viewController = DateAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showSwitchNotAccessibleView() {
-        let viewController = SwitchNotAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showSwitchAccessibleView() {
-        let viewController = SwitchAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showHeadlineNotAccessibleView() {
-        let viewController = HeadlineNotAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    private func showHeadlineAccessibleView() {
-        let viewController = HeadlineAccessibleViewController()
-        navigationController?.pushViewController(viewController, animated: true)
+        let item = RootItem.allCases[indexPath.row]
+        item.show(on: self)
     }
 }
