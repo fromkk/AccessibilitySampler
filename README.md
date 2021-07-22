@@ -15,3 +15,7 @@ Xcode: 12.5.1
 - Focus(accessible)
 - Date(not accessible)
 - Date(accessible)
+- Switch(not accessible)
+- Switch(accessible)
+- Headline(not accessible)
+- Headline(accessible)
