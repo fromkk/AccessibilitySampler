@@ -27,3 +27,4 @@
 "root.date_accessible" = "Date(accessible)";
 "root.switch_not_accessible" = "Switch(not accessible)";
 "root.switch_accessible" = "Switch(accessible)";
+"root.heading_not_accessible" = "Heading(not accessible)";
