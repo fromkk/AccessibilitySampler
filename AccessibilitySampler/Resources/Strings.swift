@@ -47,9 +47,11 @@ internal enum L10n {
         internal static let focusAccessible = L10n.tr("Localizable", "root.focus_accessible")
         /// フォーカス(not accessible)
         internal static let focusNotAccessible = L10n.tr("Localizable", "root.focus_not_accessible")
+        /// 見出し(accessible)
+        internal static let headlineAccessible = L10n.tr("Localizable", "root.headline_accessible")
         /// 見出し(not accessible)
-        internal static let headingNotAccessible = L10n.tr(
-            "Localizable", "root.heading_not_accessible")
+        internal static let headlineNotAccessible = L10n.tr(
+            "Localizable", "root.headline_not_accessible")
         /// モーダル(accessible)
         internal static let modalAccessible = L10n.tr("Localizable", "root.modal_accessible")
         /// モーダル(not accessible)

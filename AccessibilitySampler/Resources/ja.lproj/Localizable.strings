@@ -27,4 +27,5 @@
 "root.date_accessible" = "日付(accessible)";
 "root.switch_not_accessible" = "スイッチ(not accessible)";
 "root.switch_accessible" = "スイッチ(accessible)";
-"root.heading_not_accessible" = "見出し(not accessible)";
+"root.headline_not_accessible" = "見出し(not accessible)";
+"root.headline_accessible" = "見出し(accessible)";

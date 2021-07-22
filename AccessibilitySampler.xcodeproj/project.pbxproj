@@ -11,7 +11,8 @@
 		AD078DBB26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBA26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift */; };
 		AD078DBD26A9153300A388C5 /* SwitchAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBC26A9153300A388C5 /* SwitchAccessibleViewController.swift */; };
 		AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */; };
-		AD078DC226A91C6000A388C5 /* HeadingNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC126A91C6000A388C5 /* HeadingNotAccessibleViewController.swift */; };
+		AD078DC226A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC126A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift */; };
+		AD078DC426A9200D00A388C5 /* HeadlineAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */; };
 		AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */; };
 		AD2BC17626A3D2EF0016F37F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BC17526A3D2EF0016F37F /* FloatingPanel */; };
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
@@ -59,7 +60,8 @@
 		AD078DBA26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchNotAccessibleViewCell.swift; sourceTree = "<group>"; };
 		AD078DBC26A9153300A388C5 /* SwitchAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccessibleViewCell.swift; sourceTree = "<group>"; };
-		AD078DC126A91C6000A388C5 /* HeadingNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingNotAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD078DC126A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineNotAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +141,8 @@
 		AD078DC026A91B6300A388C5 /* Heading */ = {
 			isa = PBXGroup;
 			children = (
-				AD078DC126A91C6000A388C5 /* HeadingNotAccessibleViewController.swift */,
+				AD078DC126A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift */,
+				AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */,
 			);
 			path = Heading;
 			sourceTree = "<group>";
@@ -474,8 +477,9 @@
 				AD2BC18926A3E60C0016F37F /* UIViewController+.swift in Sources */,
 				AD078DBD26A9153300A388C5 /* SwitchAccessibleViewController.swift in Sources */,
 				AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */,
+				AD078DC426A9200D00A388C5 /* HeadlineAccessibleViewController.swift in Sources */,
 				AD2BC18E26A3F2B60016F37F /* NowRepresentable.swift in Sources */,
-				AD078DC226A91C6000A388C5 /* HeadingNotAccessibleViewController.swift in Sources */,
+				AD078DC226A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift in Sources */,
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,

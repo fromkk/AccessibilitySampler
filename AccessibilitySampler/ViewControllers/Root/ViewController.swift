@@ -27,7 +27,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         case dateAccessible
         case switchNotAccessible
         case switchAccessible
-        case headingNotAccessible
+        case headlineNotAccessible
+        case headlineAccessible
 
         var localizedTitle: String {
             switch self {
@@ -55,8 +56,10 @@ class ViewController: UIViewController, UITableViewDelegate {
                 return L10n.Root.switchNotAccessible
             case .switchAccessible:
                 return L10n.Root.switchAccessible
-            case .headingNotAccessible:
-                return L10n.Root.headingNotAccessible
+            case .headlineNotAccessible:
+                return L10n.Root.headlineNotAccessible
+            case .headlineAccessible:
+                return L10n.Root.headlineAccessible
             }
         }
     }
@@ -138,8 +141,10 @@ class ViewController: UIViewController, UITableViewDelegate {
             showSwitchNotAccessibleView()
         case .switchAccessible:
             showSwitchAccessibleView()
-        case .headingNotAccessible:
-            showHeadingNotAccessibleView()
+        case .headlineNotAccessible:
+            showHeadlineNotAccessibleView()
+        case .headlineAccessible:
+            showHeadlineAccessibleView()
         }
     }
 
@@ -211,8 +216,13 @@ class ViewController: UIViewController, UITableViewDelegate {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    private func showHeadingNotAccessibleView() {
-        let viewController = HeadingNotAccessibleViewController()
+    private func showHeadlineNotAccessibleView() {
+        let viewController = HeadlineNotAccessibleViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func showHeadlineAccessibleView() {
+        let viewController = HeadlineAccessibleViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

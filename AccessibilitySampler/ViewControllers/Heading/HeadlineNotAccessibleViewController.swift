@@ -1,5 +1,5 @@
 //
-//  HeadingNotAccessibleViewController.swift
+//  HeadlineNotAccessibleViewController.swift
 //  AccessibilitySampler
 //
 //  Created by Kazuya Ueoka on 2021/07/22.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class HeadingNotAccessibleViewController: UIViewController {
+final class HeadlineNotAccessibleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = L10n.Root.headingNotAccessible
+        title = L10n.Root.headlineNotAccessible
         view.backgroundColor = UIColor.systemBackground
         addScrollView()
         addStackView()
@@ -57,7 +57,7 @@ final class HeadingNotAccessibleViewController: UIViewController {
         ])
     }
 
-    private func makeHeadingLabel(with title: String) -> UILabel {
+    private func makeHeadlineLabel(with title: String) -> UILabel {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.textColor = UIColor.label
@@ -79,7 +79,7 @@ final class HeadingNotAccessibleViewController: UIViewController {
 
     private func showTexts() {
         sections.forEach {
-            stackView.addArrangedSubview(makeHeadingLabel(with: $0.title))
+            stackView.addArrangedSubview(makeHeadlineLabel(with: $0.title))
             $0.texts.forEach {
                 stackView.addArrangedSubview(makeTextLabel(with: $0))
             }
