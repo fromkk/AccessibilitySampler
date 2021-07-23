@@ -16,7 +16,7 @@ final class TapAccessibleViewController: UIViewController {
     }
 
     lazy var containerView: UIView = {
-        let view = UIView(frame: view.bounds)
+        let view = UIView(frame: self.view.bounds)
         view.isUserInteractionEnabled = true
         view.backgroundColor = UIColor.secondarySystemBackground
         view.addGestureRecognizer(

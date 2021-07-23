@@ -19,3 +19,5 @@ Xcode: 12.5.1
 - Switch(accessible)
 - Headline(not accessible)
 - Headline(accessible)
+- Input tag(not accessible)
+- Input tag(accessible)

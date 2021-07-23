@@ -29,3 +29,9 @@
 "root.switch_accessible" = "Switch(accessible)";
 "root.headline_not_accessible" = "Headline(not accessible)";
 "root.headline_accessible" = "Headline(accessible)";
+"root.tag_not_accessible" = "Input tag(not accessible)";
+"root.tag_accessible" = "Input tag(accessible)";
+"tag.placeholder" = "Input tag";
+"tag.add" = "Add";
+"tag.validation.unavailable" = "Please input alphanumeric texts.";
+"tag.validation.too_long" = "Please input 16 characters or less.";

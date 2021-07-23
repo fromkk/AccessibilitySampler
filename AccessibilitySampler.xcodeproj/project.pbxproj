@@ -13,6 +13,14 @@
 		AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */; };
 		AD078DC226A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC126A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift */; };
 		AD078DC426A9200D00A388C5 /* HeadlineAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */; };
+		AD14EF1826AA5C1A009A835F /* TagNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */; };
+		AD14EF1A26AA633A009A835F /* Notification+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1926AA633A009A835F /* Notification+Keyboard.swift */; };
+		AD14EF1C26AA8170009A835F /* TagValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1B26AA8170009A835F /* TagValidator.swift */; };
+		AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */; };
+		AD14EF2026AA841D009A835F /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1F26AA841D009A835F /* Pattern.swift */; };
+		AD14EF2226AA8ABA009A835F /* TagAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF2126AA8ABA009A835F /* TagAccessibleViewController.swift */; };
+		AD14EF2426AA9CC4009A835F /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF2326AA9CC4009A835F /* TagViewModel.swift */; };
+		AD14EF2626AA9E12009A835F /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF2526AA9E12009A835F /* Tag.swift */; };
 		AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */; };
 		AD2BC17626A3D2EF0016F37F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BC17526A3D2EF0016F37F /* FloatingPanel */; };
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
@@ -63,6 +71,14 @@
 		AD078DBE26A9155300A388C5 /* SwitchAccessibleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccessibleViewCell.swift; sourceTree = "<group>"; };
 		AD078DC126A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNotAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD14EF1926AA633A009A835F /* Notification+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Keyboard.swift"; sourceTree = "<group>"; };
+		AD14EF1B26AA8170009A835F /* TagValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagValidator.swift; sourceTree = "<group>"; };
+		AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagValidatorTest.swift; sourceTree = "<group>"; };
+		AD14EF1F26AA841D009A835F /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		AD14EF2126AA8ABA009A835F /* TagAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD14EF2326AA9CC4009A835F /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		AD14EF2526AA9E12009A835F /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +165,18 @@
 			path = Heading;
 			sourceTree = "<group>";
 		};
+		AD14EF1626AA5BE7009A835F /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */,
+				AD14EF1B26AA8170009A835F /* TagValidator.swift */,
+				AD14EF2126AA8ABA009A835F /* TagAccessibleViewController.swift */,
+				AD14EF2326AA9CC4009A835F /* TagViewModel.swift */,
+				AD14EF2526AA9E12009A835F /* Tag.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
 		AD2BC17126A3D0730016F37F /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2BC18826A3E60C0016F37F /* UIViewController+.swift */,
+				AD14EF1926AA633A009A835F /* Notification+Keyboard.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -234,6 +263,8 @@
 			children = (
 				AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */,
 				AD4A920F26A2D36B0077A8AC /* Info.plist */,
+				AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */,
+				AD14EF1F26AA841D009A835F /* Pattern.swift */,
 			);
 			path = AccessibilitySamplerTests;
 			sourceTree = "<group>";
@@ -259,6 +290,7 @@
 		AD4A923426A2DF2D0077A8AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD14EF1626AA5BE7009A835F /* Tag */,
 				AD078DC026A91B6300A388C5 /* Heading */,
 				AD078DB626A9107F00A388C5 /* Switch */,
 				AD2BC18A26A3EF860016F37F /* Date */,
@@ -449,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\n";
+			shellScript = "if command -v mint &>/dev/null; then\n  xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\nfi\n";
 		};
 		AD4A923326A2DC7A0077A8AC /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -467,7 +499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcrun --sdk macosx mint run SwiftGen\n";
+			shellScript = "if command -v mint &>/dev/null; then\n  xcrun --sdk macosx mint run SwiftGen\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -478,6 +510,7 @@
 			files = (
 				AD2BC19026A3F2E70016F37F /* DateAccessibleViewController.swift in Sources */,
 				AD2BC18926A3E60C0016F37F /* UIViewController+.swift in Sources */,
+				AD14EF1826AA5C1A009A835F /* TagNotAccessibleViewController.swift in Sources */,
 				AD078DBD26A9153300A388C5 /* SwitchAccessibleViewController.swift in Sources */,
 				AD078DBF26A9155300A388C5 /* SwitchAccessibleViewCell.swift in Sources */,
 				AD078DC426A9200D00A388C5 /* HeadlineAccessibleViewController.swift in Sources */,
@@ -486,10 +519,15 @@
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
+				AD14EF2226AA8ABA009A835F /* TagAccessibleViewController.swift in Sources */,
+				AD14EF2626AA9E12009A835F /* Tag.swift in Sources */,
 				AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */,
+				AD14EF1C26AA8170009A835F /* TagValidator.swift in Sources */,
+				AD14EF2426AA9CC4009A835F /* TagViewModel.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
 				ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */,
 				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
+				AD14EF1A26AA633A009A835F /* Notification+Keyboard.swift in Sources */,
 				AD078DBB26A911A400A388C5 /* SwitchNotAccessibleViewCell.swift in Sources */,
 				AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */,
 				AD2BC18426A3E10D0016F37F /* FocusNotAccessibleViewController.swift in Sources */,
@@ -507,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD14EF2026AA841D009A835F /* Pattern.swift in Sources */,
 				AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */,
+				AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,7 +759,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				INFOPLIST_FILE = AccessibilitySamplerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -741,7 +781,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				INFOPLIST_FILE = AccessibilitySamplerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

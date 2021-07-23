@@ -61,10 +61,27 @@ internal enum L10n {
         /// スイッチ(not accessible)
         internal static let switchNotAccessible = L10n.tr(
             "Localizable", "root.switch_not_accessible")
+        /// タグ入力(accessible)
+        internal static let tagAccessible = L10n.tr("Localizable", "root.tag_accessible")
+        /// タグ入力(not accessible)
+        internal static let tagNotAccessible = L10n.tr("Localizable", "root.tag_not_accessible")
         /// タップ(accessible)
         internal static let tapAccessible = L10n.tr("Localizable", "root.tap_accessible")
         /// タップ(not accessible)
         internal static let tapNotAccessible = L10n.tr("Localizable", "root.tap_not_accessible")
+    }
+
+    internal enum Tag {
+        /// 追加
+        internal static let add = L10n.tr("Localizable", "tag.add")
+        /// タグを入力
+        internal static let placeholder = L10n.tr("Localizable", "tag.placeholder")
+        internal enum Validation {
+            /// 16文字以内で入力してください
+            internal static let tooLong = L10n.tr("Localizable", "tag.validation.too_long")
+            /// 半角英数字で入力してください
+            internal static let unavailable = L10n.tr("Localizable", "tag.validation.unavailable")
+        }
     }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
