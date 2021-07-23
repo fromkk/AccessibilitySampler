@@ -29,3 +29,6 @@
 "root.switch_accessible" = "スイッチ(accessible)";
 "root.headline_not_accessible" = "見出し(not accessible)";
 "root.headline_accessible" = "見出し(accessible)";
+"root.tag_not_accessible" = "タグ入力(not accessible)";
+"tag.placeholder" = "タグを入力";
+"tag.add" = "追加";

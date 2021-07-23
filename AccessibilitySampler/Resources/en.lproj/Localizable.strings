@@ -29,3 +29,6 @@
 "root.switch_accessible" = "Switch(accessible)";
 "root.headline_not_accessible" = "Headline(not accessible)";
 "root.headline_accessible" = "Headline(accessible)";
+"root.tag_not_accessible" = "Input tag(not accessible)";
+"tag.placeholder" = "Input tag";
+"tag.add" = "Add";
