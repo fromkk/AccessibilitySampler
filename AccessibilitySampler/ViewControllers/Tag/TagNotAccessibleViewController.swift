@@ -8,7 +8,22 @@
 import Combine
 import UIKit
 
-final class TagNotAccessibleViewController: UIViewController {
+final class TagNotAccessibleViewController: UIViewController, UITableViewDelegate,
+    UITextFieldDelegate
+{
+    enum Section {
+        case tags
+    }
+
+    struct Tag: Hashable {
+        let rawValue: String
+        init(rawValue: String) {
+            self.rawValue = rawValue
+        }
+    }
+
+    @Published var tags: [Tag] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = L10n.Root.tagNotAccessible
@@ -18,14 +33,15 @@ final class TagNotAccessibleViewController: UIViewController {
         addTextField()
         addTableView()
         subscribeKeyboards()
+        subscribeTags()
     }
 
     // MARK: - UI
 
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: view.bounds, style: .plain)
-        tableView.addGestureRecognizer(
-            UITapGestureRecognizer(target: self, action: #selector(tapTableView(sender:))))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.delegate = self
         tableView.accessibilityIdentifier = #function
         return tableView
     }()
@@ -41,9 +57,28 @@ final class TagNotAccessibleViewController: UIViewController {
         ])
     }
 
-    @objc private func tapTableView(sender: UITapGestureRecognizer) {
-        guard textField.isFirstResponder else { return }
-        textField.resignFirstResponder()
+    private lazy var dataSource: UITableViewDiffableDataSource<Section, Tag> = {
+        let dataSource = UITableViewDiffableDataSource<Section, Tag>(tableView: tableView) {
+            tableView, indexPath, tag in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            cell.selectionStyle = .none
+            cell.textLabel?.text = tag.rawValue
+            return cell
+        }
+        return dataSource
+    }()
+
+    private let lock = NSLock()
+    private func applyDataSource(with tags: [Tag]) {
+        lock.lock()
+        defer {
+            lock.unlock()
+        }
+
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Tag>()
+        snapshot.appendSections([.tags])
+        snapshot.appendItems(tags, toSection: .tags)
+        dataSource.apply(snapshot)
     }
 
     lazy var toolbar: UIView = {
@@ -102,6 +137,7 @@ final class TagNotAccessibleViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.setTitle(L10n.Tag.add, for: .normal)
         button.setTitleColor(UIColor.link, for: .normal)
+        button.addTarget(self, action: #selector(add(sender:)), for: .touchUpInside)
         button.accessibilityIdentifier = #function
         return button
     }()
@@ -114,6 +150,14 @@ final class TagNotAccessibleViewController: UIViewController {
             addButton.centerYAnchor.constraint(equalTo: toolbar.centerYAnchor),
             addButton.widthAnchor.constraint(equalToConstant: 44),
         ])
+    }
+
+    @objc private func add(sender: Any) {
+        textField.resignFirstResponder()
+        if let text = textField.text, !text.isEmpty {
+            tags.append(.init(rawValue: text))
+        }
+        textField.text = nil
     }
 
     // MARK: - Combine
@@ -154,5 +198,20 @@ final class TagNotAccessibleViewController: UIViewController {
             }
         }
         .store(in: &cancellables)
+    }
+
+    private func subscribeTags() {
+        $tags
+            .removeDuplicates()
+            .sink { [weak self] in
+                self?.applyDataSource(with: $0)
+            }
+            .store(in: &cancellables)
+    }
+
+    // MARK: - UITableViewDelegate
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tags.remove(at: indexPath.row)
     }
 }
