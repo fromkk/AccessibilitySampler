@@ -110,6 +110,7 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
         let textField = UITextField()
         textField.textColor = UIColor.label
         textField.placeholder = L10n.Tag.placeholder
+        textField.delegate = self
         textField.accessibilityIdentifier = #function
         return textField
     }()
@@ -255,5 +256,12 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.remove(at: indexPath.row)
+    }
+
+    // MARK: - UITextField
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        add(sender: textField)
+        return false
     }
 }

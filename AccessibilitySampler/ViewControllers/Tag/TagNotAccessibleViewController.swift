@@ -8,9 +8,7 @@
 import Combine
 import UIKit
 
-final class TagNotAccessibleViewController: UIViewController, UITableViewDelegate,
-    UITextFieldDelegate
-{
+final class TagNotAccessibleViewController: UIViewController, UITableViewDelegate {
     enum Section {
         case tags
     }

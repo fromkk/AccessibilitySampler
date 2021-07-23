@@ -9,6 +9,21 @@ import Combine
 import Foundation
 
 final class TagViewModel {
+    private var cancellables: Set<AnyCancellable> = .init()
+    init() {
+        subscribeAdd()
+    }
+
+    private func subscribeAdd() {
+        _add
+            .sink { [weak self] in
+                let result = TagValidator.check(with: $0)
+                guard case .available = result else { return }
+                self?._tags.value.append(.init(rawValue: $0))
+            }
+            .store(in: &cancellables)
+    }
+
     private let _validateResult = CurrentValueSubject<TagValidatorResult, Never>(.empty)
     var validateResult: AnyPublisher<TagValidatorResult, Never> {
         _validateResult.eraseToAnyPublisher()
@@ -26,6 +41,8 @@ final class TagViewModel {
             }
         }.eraseToAnyPublisher()
     }
+
+    private let _add = PassthroughSubject<String, Never>()
 
     var errorMessage: AnyPublisher<String?, Never> {
         validateResult.map {
@@ -46,7 +63,7 @@ final class TagViewModel {
     }
 
     func add(_ text: String) {
-        _tags.value.append(.init(rawValue: text))
+        _add.send(text)
     }
 
     func remove(at index: Int) {
