@@ -3,7 +3,7 @@ name: CI
 on: [pull_request]
 
 env:
-  DEVELOPER_DIR: /Applications/Xcode_12.5.1.app
+  DEVELOPER_DIR: /Applications/Xcode_12.4.0.app
 
 jobs:
   test:
@@ -15,4 +15,4 @@ jobs:
     - name: Xcode list
       run: ls /Applications | grep 'Xcode'
     - name: Test
-      run: xcodebuild test -project AccessibilitySampler.xcodeproj -scheme AccessibilitySampler -sdk iphonesimulator -destination "OS=14.5,name=iPhone 12,platform=iOS Simulator"
+      run: xcodebuild test -project AccessibilitySampler.xcodeproj -scheme AccessibilitySampler -sdk iphonesimulator -destination "OS=14.4,name=iPhone 12,platform=iOS Simulator"
