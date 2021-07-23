@@ -61,6 +61,8 @@ internal enum L10n {
         /// スイッチ(not accessible)
         internal static let switchNotAccessible = L10n.tr(
             "Localizable", "root.switch_not_accessible")
+        /// タグ入力(accessible)
+        internal static let tagAccessible = L10n.tr("Localizable", "root.tag_accessible")
         /// タグ入力(not accessible)
         internal static let tagNotAccessible = L10n.tr("Localizable", "root.tag_not_accessible")
         /// タップ(accessible)

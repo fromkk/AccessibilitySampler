@@ -28,6 +28,7 @@ enum RootItem: CaseIterable, Hashable {
     case headlineNotAccessible
     case headlineAccessible
     case tagNotAccessible
+    case tagAccessible
 
     var localizedTitle: String {
         switch self {
@@ -61,6 +62,8 @@ enum RootItem: CaseIterable, Hashable {
             return L10n.Root.headlineAccessible
         case .tagNotAccessible:
             return L10n.Root.tagNotAccessible
+        case .tagAccessible:
+            return L10n.Root.tagAccessible
         }
     }
 
@@ -96,6 +99,8 @@ enum RootItem: CaseIterable, Hashable {
             showHeadlineAccessibleView(on: viewController)
         case .tagNotAccessible:
             showTagNotAccessibleView(on: viewController)
+        case .tagAccessible:
+            showTagAccessibleView(on: viewController)
         }
     }
 
@@ -179,6 +184,11 @@ enum RootItem: CaseIterable, Hashable {
 
     private func showTagNotAccessibleView(on viewController: UIViewController) {
         let vc = TagNotAccessibleViewController()
+        viewController.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    private func showTagAccessibleView(on viewController: UIViewController) {
+        let vc = TagAccessibleViewController()
         viewController.navigationController?.pushViewController(vc, animated: true)
     }
 }
