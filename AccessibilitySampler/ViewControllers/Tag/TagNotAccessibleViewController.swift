@@ -15,14 +15,7 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
         case tags
     }
 
-    struct Tag: Hashable {
-        let rawValue: String
-        init(rawValue: String) {
-            self.rawValue = rawValue
-        }
-    }
-
-    @Published var tags: [Tag] = []
+    var viewModel: TagViewModel = .init()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -157,6 +150,7 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
         let button = UIButton(type: .custom)
         button.setTitle(L10n.Tag.add, for: .normal)
         button.setTitleColor(UIColor.link, for: .normal)
+        button.setTitleColor(UIColor.systemGray3, for: .disabled)
         button.addTarget(self, action: #selector(add(sender:)), for: .touchUpInside)
         button.accessibilityIdentifier = #function
         return button
@@ -175,9 +169,10 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
     @objc private func add(sender: Any) {
         textField.resignFirstResponder()
         if let text = textField.text, !text.isEmpty {
-            tags.append(.init(rawValue: text))
+            viewModel.add(text)
         }
         textField.text = nil
+        viewModel.check("")
     }
 
     // MARK: - Combine
@@ -227,7 +222,7 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
     }
 
     private func subscribeTags() {
-        $tags
+        viewModel.tags
             .removeDuplicates()
             .sink { [weak self] in
                 self?.applyDataSource(with: $0)
@@ -236,31 +231,29 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
     }
 
     private func subscribeTextField() {
-        Publishers.Merge(
+        let textPublisher = Publishers.Merge(
             NotificationCenter.default.publisher(
                 for: UITextField.textDidBeginEditingNotification, object: textField),
             NotificationCenter.default.publisher(
                 for: UITextField.textDidChangeNotification, object: textField)
         )
         .compactMap { $0.object as? UITextField }
-        .map { TagValidator.check(with: $0.text ?? "") }
-        .map {
-            switch $0 {
-            case .empty, .available:
-                return nil
-            case .unavailable:
-                return L10n.Tag.Validation.unavailable
-            case .tooLong:
-                return L10n.Tag.Validation.tooLong
+        .map { $0.text }
+
+        textPublisher
+            .removeDuplicates()
+            .sink { [weak self] in
+                self?.viewModel.check($0 ?? "")
             }
-        }
-        .assign(to: \.text, on: errorLabel)
-        .store(in: &cancellables)
+            .store(in: &cancellables)
+
+        viewModel.canAdd.assign(to: \.isEnabled, on: addButton).store(in: &cancellables)
+        viewModel.errorMessage.assign(to: \.text, on: errorLabel).store(in: &cancellables)
     }
 
     // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tags.remove(at: indexPath.row)
+        viewModel.remove(at: indexPath.row)
     }
 }
