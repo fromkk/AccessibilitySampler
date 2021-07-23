@@ -20,6 +20,7 @@ final class TagViewModel {
                 let result = TagValidator.check(with: $0)
                 guard case .available = result else { return }
                 self?._tags.value.append(.init(rawValue: $0))
+                self?._added.send($0)
             }
             .store(in: &cancellables)
     }
@@ -31,6 +32,9 @@ final class TagViewModel {
 
     private let _tags = CurrentValueSubject<[Tag], Never>([])
     var tags: AnyPublisher<[Tag], Never> { _tags.eraseToAnyPublisher() }
+
+    private let _added = PassthroughSubject<String, Never>()
+    var added: AnyPublisher<String, Never> { _added.eraseToAnyPublisher() }
 
     var canAdd: AnyPublisher<Bool, Never> {
         validateResult.map {

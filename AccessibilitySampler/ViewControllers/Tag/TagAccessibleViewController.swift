@@ -56,6 +56,7 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.selectionStyle = .none
             cell.textLabel?.text = tag.rawValue
+            cell.accessibilityHint = L10n.Tag.Hint.tapToRemove
             return cell
         }
         return dataSource
@@ -183,6 +184,7 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
         subscribeKeyboards()
         subscribeTags()
         subscribeTextField()
+        subscribeAdded()
     }
 
     private func subscribeKeyboards() {
@@ -250,6 +252,19 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
 
         viewModel.canAdd.assign(to: \.isEnabled, on: addButton).store(in: &cancellables)
         viewModel.errorMessage.assign(to: \.text, on: errorLabel).store(in: &cancellables)
+
+        viewModel.errorMessage
+            .compactMap({ $0 })
+            .removeDuplicates().sink {
+                UIAccessibility.post(notification: .announcement, argument: $0)
+            }.store(in: &cancellables)
+    }
+
+    private func subscribeAdded() {
+        viewModel.added.sink {
+            UIAccessibility.post(notification: .announcement, argument: L10n.Tag.Hint.tagAdded($0))
+        }
+        .store(in: &cancellables)
     }
 
     // MARK: - UITableViewDelegate

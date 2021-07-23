@@ -76,6 +76,14 @@ internal enum L10n {
         internal static let add = L10n.tr("Localizable", "tag.add")
         /// タグを入力
         internal static let placeholder = L10n.tr("Localizable", "tag.placeholder")
+        internal enum Hint {
+            /// %@を追加しました
+            internal static func tagAdded(_ p1: Any) -> String {
+                return L10n.tr("Localizable", "tag.hint.tag_added", String(describing: p1))
+            }
+            /// ダブルタップで削除
+            internal static let tapToRemove = L10n.tr("Localizable", "tag.hint.tap_to_remove")
+        }
         internal enum Validation {
             /// 16文字以内で入力してください
             internal static let tooLong = L10n.tr("Localizable", "tag.validation.too_long")

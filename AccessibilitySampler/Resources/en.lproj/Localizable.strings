@@ -35,3 +35,5 @@
 "tag.add" = "Add";
 "tag.validation.unavailable" = "Please input alphanumeric texts.";
 "tag.validation.too_long" = "Please input 16 characters or less.";
+"tag.hint.tap_to_remove" = "Remove with double tap.";
+"tag.hint.tag_added" = "Added %@";
