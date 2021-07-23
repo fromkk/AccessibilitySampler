@@ -15,6 +15,9 @@
 		AD078DC426A9200D00A388C5 /* HeadlineAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */; };
 		AD14EF1826AA5C1A009A835F /* TagNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */; };
 		AD14EF1A26AA633A009A835F /* Notification+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1926AA633A009A835F /* Notification+Keyboard.swift */; };
+		AD14EF1C26AA8170009A835F /* TagValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1B26AA8170009A835F /* TagValidator.swift */; };
+		AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */; };
+		AD14EF2026AA841D009A835F /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14EF1F26AA841D009A835F /* Pattern.swift */; };
 		AD2BC17326A3D0BD0016F37F /* ModalNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */; };
 		AD2BC17626A3D2EF0016F37F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = AD2BC17526A3D2EF0016F37F /* FloatingPanel */; };
 		AD2BC17F26A3D7980016F37F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC17E26A3D7980016F37F /* CustomLayout.swift */; };
@@ -67,6 +70,9 @@
 		AD078DC326A9200D00A388C5 /* HeadlineAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD14EF1926AA633A009A835F /* Notification+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Keyboard.swift"; sourceTree = "<group>"; };
+		AD14EF1B26AA8170009A835F /* TagValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagValidator.swift; sourceTree = "<group>"; };
+		AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagValidatorTest.swift; sourceTree = "<group>"; };
+		AD14EF1F26AA841D009A835F /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 		AD2BC17226A3D0BD0016F37F /* ModalNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD2BC17E26A3D7980016F37F /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		AD2BC18026A3D8D30016F37F /* ModalAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAccessibleViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AD14EF1726AA5C1A009A835F /* TagNotAccessibleViewController.swift */,
+				AD14EF1B26AA8170009A835F /* TagValidator.swift */,
 			);
 			path = Tag;
 			sourceTree = "<group>";
@@ -247,6 +254,8 @@
 			children = (
 				AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */,
 				AD4A920F26A2D36B0077A8AC /* Info.plist */,
+				AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */,
+				AD14EF1F26AA841D009A835F /* Pattern.swift */,
 			);
 			path = AccessibilitySamplerTests;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
 				AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */,
+				AD14EF1C26AA8170009A835F /* TagValidator.swift in Sources */,
 				AD4A91F726A2D36A0077A8AC /* AppDelegate.swift in Sources */,
 				ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */,
 				AD4A923226A2DC420077A8AC /* Strings.swift in Sources */,
@@ -523,7 +533,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD14EF2026AA841D009A835F /* Pattern.swift in Sources */,
 				AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */,
+				AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
