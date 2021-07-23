@@ -24,6 +24,8 @@ final class TagNotAccessibleViewController: UIViewController {
 
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.addGestureRecognizer(
+            UITapGestureRecognizer(target: self, action: #selector(tapTableView(sender:))))
         tableView.accessibilityIdentifier = #function
         return tableView
     }()
@@ -37,6 +39,11 @@ final class TagNotAccessibleViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             toolbar.topAnchor.constraint(equalTo: tableView.bottomAnchor),
         ])
+    }
+
+    @objc private func tapTableView(sender: UITapGestureRecognizer) {
+        guard textField.isFirstResponder else { return }
+        textField.resignFirstResponder()
     }
 
     lazy var toolbar: UIView = {
