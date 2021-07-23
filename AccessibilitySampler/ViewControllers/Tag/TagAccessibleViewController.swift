@@ -264,4 +264,15 @@ final class TagAccessibleViewController: UIViewController, UITableViewDelegate,
         add(sender: textField)
         return false
     }
+
+    func textField(
+        _ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+        replacementString string: String
+    ) -> Bool {
+        if string == " " {
+            add(sender: textField)
+            return false
+        }
+        return true
+    }
 }
