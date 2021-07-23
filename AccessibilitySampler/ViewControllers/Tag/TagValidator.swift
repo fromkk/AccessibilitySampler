@@ -10,7 +10,7 @@ import Foundation
 
 enum TagValidatorResult: Equatable {
     case empty
-    case unuseableCharacters
+    case unavailable
     case tooLong
     case available
 }
@@ -24,7 +24,7 @@ enum TagValidator {
                 !usableCharacters.contains(char.lowercased())
             }).isEmpty
         else {
-            return .unuseableCharacters
+            return .unavailable
         }
 
         let maxLength = 16

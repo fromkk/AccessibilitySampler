@@ -32,3 +32,5 @@
 "root.tag_not_accessible" = "Input tag(not accessible)";
 "tag.placeholder" = "Input tag";
 "tag.add" = "Add";
+"tag.validation.unavailable" = "Please input alphanumeric texts.";
+"tag.validation.too_long" = "Please input 16 characters or less.";

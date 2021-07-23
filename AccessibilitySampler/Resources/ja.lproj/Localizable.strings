@@ -32,3 +32,5 @@
 "root.tag_not_accessible" = "タグ入力(not accessible)";
 "tag.placeholder" = "タグを入力";
 "tag.add" = "追加";
+"tag.validation.unavailable" = "半角英数字で入力してください";
+"tag.validation.too_long" = "16文字以内で入力してください";

@@ -74,6 +74,12 @@ internal enum L10n {
         internal static let add = L10n.tr("Localizable", "tag.add")
         /// タグを入力
         internal static let placeholder = L10n.tr("Localizable", "tag.placeholder")
+        internal enum Validation {
+            /// 16文字以内で入力してください
+            internal static let tooLong = L10n.tr("Localizable", "tag.validation.too_long")
+            /// 半角英数字で入力してください
+            internal static let unavailable = L10n.tr("Localizable", "tag.validation.unavailable")
+        }
     }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

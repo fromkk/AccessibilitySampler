@@ -31,9 +31,9 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
         addToolbar()
         addAddButton()
         addTextField()
+        addErrorLabel()
         addTableView()
-        subscribeKeyboards()
-        subscribeTags()
+        subscribe()
     }
 
     // MARK: - UI
@@ -109,7 +109,6 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
         NSLayoutConstraint.activate([
             toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             view.trailingAnchor.constraint(equalTo: toolbar.trailingAnchor),
-            toolbar.heightAnchor.constraint(equalToConstant: 50),
             toolbarBottomConstraint,
         ])
     }
@@ -129,7 +128,28 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
             textField.leadingAnchor.constraint(equalTo: toolbar.leadingAnchor, constant: 8),
             addButton.leadingAnchor.constraint(equalTo: textField.trailingAnchor, constant: 8),
             textField.heightAnchor.constraint(equalToConstant: 32),
-            textField.centerYAnchor.constraint(equalTo: toolbar.centerYAnchor),
+            textField.topAnchor.constraint(equalTo: toolbar.topAnchor, constant: 16),
+            toolbar.bottomAnchor.constraint(equalTo: textField.bottomAnchor, constant: 16),
+        ])
+    }
+
+    lazy var errorLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.systemRed
+        label.font = UIFont.preferredFont(forTextStyle: .caption1)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.accessibilityIdentifier = #function
+        return label
+    }()
+
+    private func addErrorLabel() {
+        errorLabel.translatesAutoresizingMaskIntoConstraints = false
+        toolbar.addSubview(errorLabel)
+        NSLayoutConstraint.activate([
+            errorLabel.leadingAnchor.constraint(equalTo: toolbar.leadingAnchor, constant: 8),
+            toolbar.trailingAnchor.constraint(equalTo: errorLabel.trailingAnchor, constant: 8),
+            textField.topAnchor.constraint(equalTo: errorLabel.bottomAnchor, constant: 2),
         ])
     }
 
@@ -163,6 +183,12 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
     // MARK: - Combine
 
     private var cancellables: Set<AnyCancellable> = .init()
+    private func subscribe() {
+        subscribeKeyboards()
+        subscribeTags()
+        subscribeTextField()
+    }
+
     private func subscribeKeyboards() {
         NotificationCenter.default.publisher(
             for: UIResponder.keyboardWillShowNotification, object: nil
@@ -207,6 +233,29 @@ final class TagNotAccessibleViewController: UIViewController, UITableViewDelegat
                 self?.applyDataSource(with: $0)
             }
             .store(in: &cancellables)
+    }
+
+    private func subscribeTextField() {
+        Publishers.Merge(
+            NotificationCenter.default.publisher(
+                for: UITextField.textDidBeginEditingNotification, object: textField),
+            NotificationCenter.default.publisher(
+                for: UITextField.textDidChangeNotification, object: textField)
+        )
+        .compactMap { $0.object as? UITextField }
+        .map { TagValidator.check(with: $0.text ?? "") }
+        .map {
+            switch $0 {
+            case .empty, .available:
+                return nil
+            case .unavailable:
+                return L10n.Tag.Validation.unavailable
+            case .tooLong:
+                return L10n.Tag.Validation.tooLong
+            }
+        }
+        .assign(to: \.text, on: errorLabel)
+        .store(in: &cancellables)
     }
 
     // MARK: - UITableViewDelegate

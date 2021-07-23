@@ -12,7 +12,7 @@ final class TagValidatorTest: XCTestCase {
     func testValidation() {
         let patterns: [Pattern<String, TagValidatorResult>] = [
             .init(input: "", assertion: .empty),
-            .init(input: "!!!", assertion: .unuseableCharacters),
+            .init(input: "!!!", assertion: .unavailable),
             .init(input: "abcdefgHIJKLMN123", assertion: .tooLong),
             .init(input: "1234567890aBcDeF", assertion: .available)
         ]
