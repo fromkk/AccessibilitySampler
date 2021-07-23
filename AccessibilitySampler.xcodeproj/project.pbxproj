@@ -481,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\n";
+			shellScript = "if command -v mint &>/dev/null; then\n  xcrun --sdk macosx mint run swift-format -r ${SRCROOT}/AccessibilitySampler -i --configuration ${SRCROOT}/.swift-format\nfi\n";
 		};
 		AD4A923326A2DC7A0077A8AC /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -499,7 +499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcrun --sdk macosx mint run SwiftGen\n";
+			shellScript = "if command -v mint &>/dev/null; then\n  xcrun --sdk macosx mint run SwiftGen\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
