@@ -44,6 +44,7 @@
 		AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */; };
 		AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */; };
 		AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */; };
+		AD82EC9926B5440900B67F8C /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9826B5440900B67F8C /* ColorsViewController.swift */; };
 		ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8D93026A9937D00C2115D /* RootItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD82EC9826B5440900B67F8C /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		ADB8D93026A9937D00C2115D /* RootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +292,7 @@
 		AD4A923426A2DF2D0077A8AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD82EC9726B543FB00B67F8C /* Colors */,
 				AD14EF1626AA5BE7009A835F /* Tag */,
 				AD078DC026A91B6300A388C5 /* Heading */,
 				AD078DB626A9107F00A388C5 /* Switch */,
@@ -328,6 +331,14 @@
 				AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */,
 			);
 			path = Tap;
+			sourceTree = "<group>";
+		};
+		AD82EC9726B543FB00B67F8C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AD82EC9826B5440900B67F8C /* ColorsViewController.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +528,7 @@
 				AD2BC18E26A3F2B60016F37F /* NowRepresentable.swift in Sources */,
 				AD078DC226A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift in Sources */,
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
+				AD82EC9926B5440900B67F8C /* ColorsViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
 				AD14EF2226AA8ABA009A835F /* TagAccessibleViewController.swift in Sources */,

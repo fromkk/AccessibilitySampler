@@ -39,6 +39,8 @@ internal enum L10n {
         /// ボタン(not accessible)
         internal static let buttonNotAccessible = L10n.tr(
             "Localizable", "root.button_not_accessible")
+        /// 色チェック
+        internal static let colors = L10n.tr("Localizable", "root.colors")
         /// 日付(accessible)
         internal static let dateAccessible = L10n.tr("Localizable", "root.date_accessible")
         /// 日付(not accessible)
