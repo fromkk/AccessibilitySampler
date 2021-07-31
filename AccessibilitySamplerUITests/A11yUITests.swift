@@ -16,7 +16,7 @@ final class A11yUITests: XCTestCase {
         let tableView = application.tables["tableView"]
         let colorsCell = tableView.cells["colors"]
         colorsCell.tap()
-        let buttons = application.buttons.allElementsBoundByIndex
+        let buttons = application.buttons.allElementsBoundByIndex.filter { !$0.identifier.isEmpty }
         a11y(tests: a11yTestSuiteInteractive, on: buttons)
     }
 }

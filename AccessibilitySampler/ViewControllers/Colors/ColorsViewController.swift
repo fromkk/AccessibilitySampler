@@ -124,6 +124,9 @@ final class ColorsViewController: UIViewController {
         button.contentEdgeInsets = .init(top: 8, left: 12, bottom: 8, right: 12)
         button.layer.cornerRadius = 6
         button.layer.masksToBounds = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        button.accessibilityTraits = [.button]
         return button
     }
 }
