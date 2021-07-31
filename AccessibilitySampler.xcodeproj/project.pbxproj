@@ -36,7 +36,6 @@
 		AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91FA26A2D36A0077A8AC /* ViewController.swift */; };
 		AD4A920026A2D36B0077A8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4A91FF26A2D36B0077A8AC /* Assets.xcassets */; };
 		AD4A920326A2D36B0077A8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4A920126A2D36B0077A8AC /* LaunchScreen.storyboard */; };
-		AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */; };
 		AD4A921926A2D36B0077A8AC /* AccessibilitySamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */; };
 		AD4A922D26A2DBBA0077A8AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4A922F26A2DBBA0077A8AC /* Localizable.strings */; };
 		AD4A923226A2DC420077A8AC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923126A2DC420077A8AC /* Strings.swift */; };
@@ -45,6 +44,9 @@
 		AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */; };
 		AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */; };
 		AD82EC9926B5440900B67F8C /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9826B5440900B67F8C /* ColorsViewController.swift */; };
+		AD82EC9C26B54B4500B67F8C /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AD82EC9B26B54B4500B67F8C /* SnapshotTesting */; };
+		AD82EC9E26B54B6200B67F8C /* SnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */; };
+		AD82ECA026B54BEC00B67F8C /* SnapshotConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */; };
 		ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8D93026A9937D00C2115D /* RootItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +99,6 @@
 		AD4A920226A2D36B0077A8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4A920426A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4A920926A2D36B0077A8AC /* AccessibilitySamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilitySamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySamplerTests.swift; sourceTree = "<group>"; };
 		AD4A920F26A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4A921426A2D36B0077A8AC /* AccessibilitySamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilitySamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySamplerUITests.swift; sourceTree = "<group>"; };
@@ -110,6 +111,8 @@
 		AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD82EC9826B5440900B67F8C /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTest.swift; sourceTree = "<group>"; };
+		AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotConstants.swift; sourceTree = "<group>"; };
 		ADB8D93026A9937D00C2115D /* RootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD82EC9C26B54B4500B67F8C /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +267,11 @@
 		AD4A920C26A2D36B0077A8AC /* AccessibilitySamplerTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */,
 				AD4A920F26A2D36B0077A8AC /* Info.plist */,
 				AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */,
 				AD14EF1F26AA841D009A835F /* Pattern.swift */,
+				AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */,
+				AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */,
 			);
 			path = AccessibilitySamplerTests;
 			sourceTree = "<group>";
@@ -380,6 +385,9 @@
 				AD4A920B26A2D36B0077A8AC /* PBXTargetDependency */,
 			);
 			name = AccessibilitySamplerTests;
+			packageProductDependencies = (
+				AD82EC9B26B54B4500B67F8C /* SnapshotTesting */,
+			);
 			productName = AccessibilitySamplerTests;
 			productReference = AD4A920926A2D36B0077A8AC /* AccessibilitySamplerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -436,6 +444,7 @@
 			mainGroup = AD4A91EA26A2D36A0077A8AC;
 			packageReferences = (
 				AD2BC17426A3D2EE0016F37F /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = AD4A91F426A2D36A0077A8AC /* Products */;
 			projectDirPath = "";
@@ -558,8 +567,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD14EF2026AA841D009A835F /* Pattern.swift in Sources */,
-				AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */,
+				AD82EC9E26B54B6200B67F8C /* SnapshotTest.swift in Sources */,
 				AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */,
+				AD82ECA026B54BEC00B67F8C /* SnapshotConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,6 +907,14 @@
 				minimumVersion = 2.4.0;
 			};
 		};
+		AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -904,6 +922,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD2BC17426A3D2EE0016F37F /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
+		};
+		AD82EC9B26B54B4500B67F8C /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
