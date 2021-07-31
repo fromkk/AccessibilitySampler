@@ -36,14 +36,20 @@
 		AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A91FA26A2D36A0077A8AC /* ViewController.swift */; };
 		AD4A920026A2D36B0077A8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4A91FF26A2D36B0077A8AC /* Assets.xcassets */; };
 		AD4A920326A2D36B0077A8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4A920126A2D36B0077A8AC /* LaunchScreen.storyboard */; };
-		AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */; };
-		AD4A921926A2D36B0077A8AC /* AccessibilitySamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */; };
 		AD4A922D26A2DBBA0077A8AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4A922F26A2DBBA0077A8AC /* Localizable.strings */; };
 		AD4A923226A2DC420077A8AC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923126A2DC420077A8AC /* Strings.swift */; };
 		AD4A923B26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923A26A2E6AE0077A8AC /* ButtonNotAccessibleViewController.swift */; };
 		AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */; };
 		AD4A924026A2ECC50077A8AC /* TapNotAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */; };
 		AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */; };
+		AD82EC9926B5440900B67F8C /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9826B5440900B67F8C /* ColorsViewController.swift */; };
+		AD82EC9C26B54B4500B67F8C /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AD82EC9B26B54B4500B67F8C /* SnapshotTesting */; };
+		AD82EC9E26B54B6200B67F8C /* SnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */; };
+		AD82ECA026B54BEC00B67F8C /* SnapshotConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */; };
+		AD82ECA226B54D3B00B67F8C /* AccessibilitySnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82ECA126B54D3B00B67F8C /* AccessibilitySnapshotTest.swift */; };
+		AD82ECA526B54DA600B67F8C /* AccessibilitySnapshot in Frameworks */ = {isa = PBXBuildFile; productRef = AD82ECA426B54DA600B67F8C /* AccessibilitySnapshot */; };
+		AD82ECAD26B54F5E00B67F8C /* A11yUITests in Frameworks */ = {isa = PBXBuildFile; productRef = AD82ECAC26B54F5E00B67F8C /* A11yUITests */; };
+		AD82ECAF26B54F7300B67F8C /* A11yUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82ECAE26B54F7300B67F8C /* A11yUITests.swift */; };
 		ADB8D93126A9937D00C2115D /* RootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8D93026A9937D00C2115D /* RootItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,10 +102,8 @@
 		AD4A920226A2D36B0077A8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4A920426A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4A920926A2D36B0077A8AC /* AccessibilitySamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilitySamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySamplerTests.swift; sourceTree = "<group>"; };
 		AD4A920F26A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4A921426A2D36B0077A8AC /* AccessibilitySamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilitySamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySamplerUITests.swift; sourceTree = "<group>"; };
 		AD4A921A26A2D36B0077A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4A922E26A2DBBA0077A8AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4A923026A2DBC80077A8AC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -108,6 +112,11 @@
 		AD4A923C26A2EAD20077A8AC /* ButtonAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A923F26A2ECC50077A8AC /* TapNotAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNotAccessibleViewController.swift; sourceTree = "<group>"; };
 		AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAccessibleViewController.swift; sourceTree = "<group>"; };
+		AD82EC9826B5440900B67F8C /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTest.swift; sourceTree = "<group>"; };
+		AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotConstants.swift; sourceTree = "<group>"; };
+		AD82ECA126B54D3B00B67F8C /* AccessibilitySnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySnapshotTest.swift; sourceTree = "<group>"; };
+		AD82ECAE26B54F7300B67F8C /* A11yUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yUITests.swift; sourceTree = "<group>"; };
 		ADB8D93026A9937D00C2115D /* RootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD82EC9C26B54B4500B67F8C /* SnapshotTesting in Frameworks */,
+				AD82ECA526B54DA600B67F8C /* AccessibilitySnapshot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD82ECAD26B54F5E00B67F8C /* A11yUITests in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +273,12 @@
 		AD4A920C26A2D36B0077A8AC /* AccessibilitySamplerTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD4A920D26A2D36B0077A8AC /* AccessibilitySamplerTests.swift */,
 				AD4A920F26A2D36B0077A8AC /* Info.plist */,
 				AD14EF1D26AA83EC009A835F /* TagValidatorTest.swift */,
 				AD14EF1F26AA841D009A835F /* Pattern.swift */,
+				AD82EC9D26B54B6200B67F8C /* SnapshotTest.swift */,
+				AD82EC9F26B54BEC00B67F8C /* SnapshotConstants.swift */,
+				AD82ECA126B54D3B00B67F8C /* AccessibilitySnapshotTest.swift */,
 			);
 			path = AccessibilitySamplerTests;
 			sourceTree = "<group>";
@@ -272,8 +286,8 @@
 		AD4A921726A2D36B0077A8AC /* AccessibilitySamplerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AD4A921826A2D36B0077A8AC /* AccessibilitySamplerUITests.swift */,
 				AD4A921A26A2D36B0077A8AC /* Info.plist */,
+				AD82ECAE26B54F7300B67F8C /* A11yUITests.swift */,
 			);
 			path = AccessibilitySamplerUITests;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 		AD4A923426A2DF2D0077A8AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD82EC9726B543FB00B67F8C /* Colors */,
 				AD14EF1626AA5BE7009A835F /* Tag */,
 				AD078DC026A91B6300A388C5 /* Heading */,
 				AD078DB626A9107F00A388C5 /* Switch */,
@@ -328,6 +343,14 @@
 				AD4A924126A2F2A00077A8AC /* TapAccessibleViewController.swift */,
 			);
 			path = Tap;
+			sourceTree = "<group>";
+		};
+		AD82EC9726B543FB00B67F8C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AD82EC9826B5440900B67F8C /* ColorsViewController.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +392,10 @@
 				AD4A920B26A2D36B0077A8AC /* PBXTargetDependency */,
 			);
 			name = AccessibilitySamplerTests;
+			packageProductDependencies = (
+				AD82EC9B26B54B4500B67F8C /* SnapshotTesting */,
+				AD82ECA426B54DA600B67F8C /* AccessibilitySnapshot */,
+			);
 			productName = AccessibilitySamplerTests;
 			productReference = AD4A920926A2D36B0077A8AC /* AccessibilitySamplerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -387,6 +414,9 @@
 				AD4A921626A2D36B0077A8AC /* PBXTargetDependency */,
 			);
 			name = AccessibilitySamplerUITests;
+			packageProductDependencies = (
+				AD82ECAC26B54F5E00B67F8C /* A11yUITests */,
+			);
 			productName = AccessibilitySamplerUITests;
 			productReference = AD4A921426A2D36B0077A8AC /* AccessibilitySamplerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -409,6 +439,7 @@
 					};
 					AD4A921326A2D36B0077A8AC = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = AD4A91F226A2D36A0077A8AC;
 					};
 				};
@@ -425,6 +456,9 @@
 			mainGroup = AD4A91EA26A2D36A0077A8AC;
 			packageReferences = (
 				AD2BC17426A3D2EE0016F37F /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				AD82ECA326B54DA600B67F8C /* XCRemoteSwiftPackageReference "AccessibilitySnapshot" */,
+				AD82ECAB26B54F5E00B67F8C /* XCRemoteSwiftPackageReference "A11yUITests" */,
 			);
 			productRefGroup = AD4A91F426A2D36A0077A8AC /* Products */;
 			projectDirPath = "";
@@ -517,6 +551,7 @@
 				AD2BC18E26A3F2B60016F37F /* NowRepresentable.swift in Sources */,
 				AD078DC226A91C6000A388C5 /* HeadlineNotAccessibleViewController.swift in Sources */,
 				AD4A923D26A2EAD20077A8AC /* ButtonAccessibleViewController.swift in Sources */,
+				AD82EC9926B5440900B67F8C /* ColorsViewController.swift in Sources */,
 				AD4A91FB26A2D36A0077A8AC /* ViewController.swift in Sources */,
 				AD4A924226A2F2A00077A8AC /* TapAccessibleViewController.swift in Sources */,
 				AD14EF2226AA8ABA009A835F /* TagAccessibleViewController.swift in Sources */,
@@ -546,8 +581,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD14EF2026AA841D009A835F /* Pattern.swift in Sources */,
-				AD4A920E26A2D36B0077A8AC /* AccessibilitySamplerTests.swift in Sources */,
+				AD82ECA226B54D3B00B67F8C /* AccessibilitySnapshotTest.swift in Sources */,
+				AD82EC9E26B54B6200B67F8C /* SnapshotTest.swift in Sources */,
 				AD14EF1E26AA83EC009A835F /* TagValidatorTest.swift in Sources */,
+				AD82ECA026B54BEC00B67F8C /* SnapshotConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4A921926A2D36B0077A8AC /* AccessibilitySamplerUITests.swift in Sources */,
+				AD82ECAF26B54F7300B67F8C /* A11yUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +836,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				INFOPLIST_FILE = AccessibilitySamplerUITests/Info.plist;
@@ -809,6 +847,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.AccessibilitySamplerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AccessibilitySampler;
@@ -819,6 +858,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				INFOPLIST_FILE = AccessibilitySamplerUITests/Info.plist;
@@ -885,6 +925,30 @@
 				minimumVersion = 2.4.0;
 			};
 		};
+		AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		AD82ECA326B54DA600B67F8C /* XCRemoteSwiftPackageReference "AccessibilitySnapshot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cashapp/AccessibilitySnapshot";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		AD82ECAB26B54F5E00B67F8C /* XCRemoteSwiftPackageReference "A11yUITests" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwapp/A11yUITests";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -892,6 +956,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD2BC17426A3D2EE0016F37F /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
+		};
+		AD82EC9B26B54B4500B67F8C /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD82EC9A26B54B4500B67F8C /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		AD82ECA426B54DA600B67F8C /* AccessibilitySnapshot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD82ECA326B54DA600B67F8C /* XCRemoteSwiftPackageReference "AccessibilitySnapshot" */;
+			productName = AccessibilitySnapshot;
+		};
+		AD82ECAC26B54F5E00B67F8C /* A11yUITests */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD82ECAB26B54F5E00B67F8C /* XCRemoteSwiftPackageReference "A11yUITests" */;
+			productName = A11yUITests;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

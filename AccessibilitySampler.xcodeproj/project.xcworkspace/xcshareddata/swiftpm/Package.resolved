@@ -2,12 +2,39 @@
   "object": {
     "pins": [
       {
+        "package": "A11yUITests",
+        "repositoryURL": "https://github.com/rwapp/A11yUITests",
+        "state": {
+          "branch": null,
+          "revision": "21409d02ecce5afb20e509c3b26747e6f2a63178",
+          "version": "0.5.1"
+        }
+      },
+      {
+        "package": "AccessibilitySnapshot",
+        "repositoryURL": "https://github.com/cashapp/AccessibilitySnapshot",
+        "state": {
+          "branch": null,
+          "revision": "fb797dda564408b7da23349b25d192339402286e",
+          "version": "0.4.1"
+        }
+      },
+      {
         "package": "FloatingPanel",
         "repositoryURL": "https://github.com/scenee/FloatingPanel.git",
         "state": {
           "branch": null,
           "revision": "b8fcb50874f50bb511173700f87b09344c568c6a",
           "version": "2.4.0"
+        }
+      },
+      {
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing",
+        "state": {
+          "branch": null,
+          "revision": "f8a9c997c3c1dab4e216a8ec9014e23144cbab37",
+          "version": "1.9.0"
         }
       }
     ]

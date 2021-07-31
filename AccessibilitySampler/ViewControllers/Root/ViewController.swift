@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.textLabel?.text = item.localizedTitle
+            cell.accessibilityIdentifier = item.rawValue
             return cell
         }
         return dataSource

@@ -31,6 +31,7 @@
 "root.headline_accessible" = "Headline(accessible)";
 "root.tag_not_accessible" = "Input tag(not accessible)";
 "root.tag_accessible" = "Input tag(accessible)";
+"root.colors" = "Color check";
 "tag.placeholder" = "Input tag";
 "tag.add" = "Add";
 "tag.validation.unavailable" = "Please input alphanumeric texts.";
