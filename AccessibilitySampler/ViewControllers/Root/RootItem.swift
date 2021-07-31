@@ -12,7 +12,7 @@ enum RootSection: CaseIterable, Hashable {
     case items
 }
 
-enum RootItem: CaseIterable, Hashable {
+enum RootItem: String, CaseIterable, Hashable {
     case tapNotAccessible
     case tapAccessible
     case buttonNotAccessible

@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "A11yUITests",
+        "repositoryURL": "https://github.com/rwapp/A11yUITests",
+        "state": {
+          "branch": null,
+          "revision": "21409d02ecce5afb20e509c3b26747e6f2a63178",
+          "version": "0.5.1"
+        }
+      },
+      {
         "package": "AccessibilitySnapshot",
         "repositoryURL": "https://github.com/cashapp/AccessibilitySnapshot",
         "state": {
