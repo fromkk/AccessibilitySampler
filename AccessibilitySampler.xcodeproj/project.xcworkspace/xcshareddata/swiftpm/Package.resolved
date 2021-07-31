@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "AccessibilitySnapshot",
+        "repositoryURL": "https://github.com/cashapp/AccessibilitySnapshot",
+        "state": {
+          "branch": null,
+          "revision": "fb797dda564408b7da23349b25d192339402286e",
+          "version": "0.4.1"
+        }
+      },
+      {
         "package": "FloatingPanel",
         "repositoryURL": "https://github.com/scenee/FloatingPanel.git",
         "state": {
